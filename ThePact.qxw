@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
@@ -10,44 +10,50 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN429695)" Line="0">
-     <PluginParameters UniverseChannels="196"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Input" ID="1">
-    <Input Plugin="MIDI" UID="PACER MIDI1" Line="1" Profile="Nektar Pacer"/>
+    <Input Plugin="MIDI" UID="None" Line="1" Profile="Nektar Pacer"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.110" outputUni="0"/>
     </Output>
    </Universe>
    <Universe Name="Säule1 (out)" ID="3">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.111"/>
     </Output>
    </Universe>
    <Universe Name="Säule2 (out)" ID="4">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.110"/>
     </Output>
    </Universe>
    <Universe Name="Säule3 (out)" ID="5">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.109"/>
     </Output>
    </Universe>
    <Universe Name="Säule4 (out)" ID="6">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.108"/>
     </Output>
    </Universe>
    <Universe Name="Backlights" ID="7">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
      <PluginParameters outputIP="192.168.0.107"/>
     </Output>
    </Universe>
    <Universe Name="Audio In" ID="8"/>
+   <Universe Name="Loopback Out" ID="9">
+    <Output Plugin="Loopback" UID="Loopback 1" Line="0">
+     <PluginParameters UniverseChannels="64"/>
+    </Output>
+   </Universe>
+   <Universe Name="Loopback In" ID="10">
+    <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
+   </Universe>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Fun-Generation</Manufacturer>
@@ -469,6 +475,646 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>38</ID>
+   <Name>Page  #01</Name>
+   <Universe>9</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>39</ID>
+   <Name>Page  #02</Name>
+   <Universe>9</Universe>
+   <Address>1</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>40</ID>
+   <Name>Page  #03</Name>
+   <Universe>9</Universe>
+   <Address>2</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>41</ID>
+   <Name>Page  #04</Name>
+   <Universe>9</Universe>
+   <Address>3</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>42</ID>
+   <Name>Page  #05</Name>
+   <Universe>9</Universe>
+   <Address>4</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>43</ID>
+   <Name>Page  #06</Name>
+   <Universe>9</Universe>
+   <Address>5</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>44</ID>
+   <Name>Page  #07</Name>
+   <Universe>9</Universe>
+   <Address>6</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>45</ID>
+   <Name>Page  #08</Name>
+   <Universe>9</Universe>
+   <Address>7</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>46</ID>
+   <Name>Page  #09</Name>
+   <Universe>9</Universe>
+   <Address>8</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>47</ID>
+   <Name>Page  #10</Name>
+   <Universe>9</Universe>
+   <Address>9</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>48</ID>
+   <Name>Page  #11</Name>
+   <Universe>9</Universe>
+   <Address>10</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>49</ID>
+   <Name>Page  #12</Name>
+   <Universe>9</Universe>
+   <Address>11</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>50</ID>
+   <Name>Page  #13</Name>
+   <Universe>9</Universe>
+   <Address>12</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>51</ID>
+   <Name>Page  #14</Name>
+   <Universe>9</Universe>
+   <Address>13</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>52</ID>
+   <Name>Page  #15</Name>
+   <Universe>9</Universe>
+   <Address>14</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>53</ID>
+   <Name>Page  #16</Name>
+   <Universe>9</Universe>
+   <Address>15</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>54</ID>
+   <Name>Page  #17</Name>
+   <Universe>9</Universe>
+   <Address>16</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>55</ID>
+   <Name>Page  #18</Name>
+   <Universe>9</Universe>
+   <Address>17</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>56</ID>
+   <Name>Page  #19</Name>
+   <Universe>9</Universe>
+   <Address>18</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>57</ID>
+   <Name>Page  #20</Name>
+   <Universe>9</Universe>
+   <Address>19</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>58</ID>
+   <Name>Page  #21</Name>
+   <Universe>9</Universe>
+   <Address>20</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>59</ID>
+   <Name>Page  #22</Name>
+   <Universe>9</Universe>
+   <Address>21</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>60</ID>
+   <Name>Page  #23</Name>
+   <Universe>9</Universe>
+   <Address>22</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>61</ID>
+   <Name>Page  #24</Name>
+   <Universe>9</Universe>
+   <Address>23</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>62</ID>
+   <Name>Page  #25</Name>
+   <Universe>9</Universe>
+   <Address>24</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>63</ID>
+   <Name>Page  #26</Name>
+   <Universe>9</Universe>
+   <Address>25</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>64</ID>
+   <Name>Page  #27</Name>
+   <Universe>9</Universe>
+   <Address>26</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>65</ID>
+   <Name>Page  #28</Name>
+   <Universe>9</Universe>
+   <Address>27</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>66</ID>
+   <Name>Page  #29</Name>
+   <Universe>9</Universe>
+   <Address>28</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>67</ID>
+   <Name>Page  #30</Name>
+   <Universe>9</Universe>
+   <Address>29</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>68</ID>
+   <Name>Page  #31</Name>
+   <Universe>9</Universe>
+   <Address>30</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>69</ID>
+   <Name>Page  #32</Name>
+   <Universe>9</Universe>
+   <Address>31</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>70</ID>
+   <Name>Page  #33</Name>
+   <Universe>9</Universe>
+   <Address>32</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>71</ID>
+   <Name>Page  #34</Name>
+   <Universe>9</Universe>
+   <Address>33</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>72</ID>
+   <Name>Page  #35</Name>
+   <Universe>9</Universe>
+   <Address>34</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>73</ID>
+   <Name>Page  #36</Name>
+   <Universe>9</Universe>
+   <Address>35</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>74</ID>
+   <Name>Page  #37</Name>
+   <Universe>9</Universe>
+   <Address>36</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>75</ID>
+   <Name>Page  #38</Name>
+   <Universe>9</Universe>
+   <Address>37</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>76</ID>
+   <Name>Page  #39</Name>
+   <Universe>9</Universe>
+   <Address>38</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>77</ID>
+   <Name>Page  #40</Name>
+   <Universe>9</Universe>
+   <Address>39</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>78</ID>
+   <Name>Page  #41</Name>
+   <Universe>9</Universe>
+   <Address>40</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>79</ID>
+   <Name>Page  #42</Name>
+   <Universe>9</Universe>
+   <Address>41</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>80</ID>
+   <Name>Page  #43</Name>
+   <Universe>9</Universe>
+   <Address>42</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>81</ID>
+   <Name>Page  #44</Name>
+   <Universe>9</Universe>
+   <Address>43</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>82</ID>
+   <Name>Page  #45</Name>
+   <Universe>9</Universe>
+   <Address>44</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>83</ID>
+   <Name>Page  #46</Name>
+   <Universe>9</Universe>
+   <Address>45</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>84</ID>
+   <Name>Page  #47</Name>
+   <Universe>9</Universe>
+   <Address>46</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>85</ID>
+   <Name>Page  #48</Name>
+   <Universe>9</Universe>
+   <Address>47</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>86</ID>
+   <Name>Page  #49</Name>
+   <Universe>9</Universe>
+   <Address>48</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>87</ID>
+   <Name>Page  #50</Name>
+   <Universe>9</Universe>
+   <Address>49</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>88</ID>
+   <Name>Page  #51</Name>
+   <Universe>9</Universe>
+   <Address>50</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>89</ID>
+   <Name>Page  #52</Name>
+   <Universe>9</Universe>
+   <Address>51</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>90</ID>
+   <Name>Page  #53</Name>
+   <Universe>9</Universe>
+   <Address>52</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>91</ID>
+   <Name>Page  #54</Name>
+   <Universe>9</Universe>
+   <Address>53</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>92</ID>
+   <Name>Page  #55</Name>
+   <Universe>9</Universe>
+   <Address>54</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>93</ID>
+   <Name>Page  #56</Name>
+   <Universe>9</Universe>
+   <Address>55</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>94</ID>
+   <Name>Page  #57</Name>
+   <Universe>9</Universe>
+   <Address>56</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>95</ID>
+   <Name>Page  #58</Name>
+   <Universe>9</Universe>
+   <Address>57</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>96</ID>
+   <Name>Page  #59</Name>
+   <Universe>9</Universe>
+   <Address>58</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>97</ID>
+   <Name>Page  #60</Name>
+   <Universe>9</Universe>
+   <Address>59</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>98</ID>
+   <Name>ctrl #1</Name>
+   <Universe>9</Universe>
+   <Address>60</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>99</ID>
+   <Name>ctrl #2</Name>
+   <Universe>9</Universe>
+   <Address>61</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>100</ID>
+   <Name>ctrl #3</Name>
+   <Universe>9</Universe>
+   <Address>62</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>101</ID>
+   <Name>ctrl #4</Name>
+   <Universe>9</Universe>
+   <Address>63</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
    <Mode>GRB</Mode>
    <Weight>100</Weight>
@@ -520,6 +1166,66 @@
    <Size X="2" Y="1"/>
    <Head X="0" Y="0" Fixture="5">0</Head>
    <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="0" Y="1" Fixture="38">0</Head>
+   <Head X="1" Y="1" Fixture="39">0</Head>
+   <Head X="0" Y="2" Fixture="40">0</Head>
+   <Head X="1" Y="2" Fixture="41">0</Head>
+   <Head X="0" Y="3" Fixture="42">0</Head>
+   <Head X="1" Y="3" Fixture="43">0</Head>
+   <Head X="0" Y="4" Fixture="44">0</Head>
+   <Head X="1" Y="4" Fixture="45">0</Head>
+   <Head X="0" Y="5" Fixture="46">0</Head>
+   <Head X="1" Y="5" Fixture="47">0</Head>
+   <Head X="0" Y="6" Fixture="48">0</Head>
+   <Head X="1" Y="6" Fixture="49">0</Head>
+   <Head X="0" Y="7" Fixture="50">0</Head>
+   <Head X="1" Y="7" Fixture="51">0</Head>
+   <Head X="0" Y="8" Fixture="52">0</Head>
+   <Head X="1" Y="8" Fixture="53">0</Head>
+   <Head X="0" Y="9" Fixture="54">0</Head>
+   <Head X="1" Y="9" Fixture="55">0</Head>
+   <Head X="0" Y="10" Fixture="56">0</Head>
+   <Head X="1" Y="10" Fixture="57">0</Head>
+   <Head X="0" Y="11" Fixture="58">0</Head>
+   <Head X="1" Y="11" Fixture="59">0</Head>
+   <Head X="0" Y="12" Fixture="60">0</Head>
+   <Head X="1" Y="12" Fixture="61">0</Head>
+   <Head X="0" Y="13" Fixture="62">0</Head>
+   <Head X="1" Y="13" Fixture="63">0</Head>
+   <Head X="0" Y="14" Fixture="64">0</Head>
+   <Head X="1" Y="14" Fixture="65">0</Head>
+   <Head X="0" Y="15" Fixture="66">0</Head>
+   <Head X="1" Y="15" Fixture="67">0</Head>
+   <Head X="0" Y="16" Fixture="68">0</Head>
+   <Head X="1" Y="16" Fixture="69">0</Head>
+   <Head X="0" Y="17" Fixture="70">0</Head>
+   <Head X="1" Y="17" Fixture="71">0</Head>
+   <Head X="0" Y="18" Fixture="72">0</Head>
+   <Head X="1" Y="18" Fixture="73">0</Head>
+   <Head X="0" Y="19" Fixture="74">0</Head>
+   <Head X="1" Y="19" Fixture="75">0</Head>
+   <Head X="0" Y="20" Fixture="76">0</Head>
+   <Head X="1" Y="20" Fixture="77">0</Head>
+   <Head X="0" Y="21" Fixture="78">0</Head>
+   <Head X="1" Y="21" Fixture="79">0</Head>
+   <Head X="0" Y="22" Fixture="80">0</Head>
+   <Head X="1" Y="22" Fixture="81">0</Head>
+   <Head X="0" Y="23" Fixture="82">0</Head>
+   <Head X="1" Y="23" Fixture="83">0</Head>
+   <Head X="0" Y="24" Fixture="84">0</Head>
+   <Head X="1" Y="24" Fixture="85">0</Head>
+   <Head X="0" Y="25" Fixture="86">0</Head>
+   <Head X="1" Y="25" Fixture="87">0</Head>
+   <Head X="0" Y="26" Fixture="88">0</Head>
+   <Head X="1" Y="26" Fixture="89">0</Head>
+   <Head X="0" Y="27" Fixture="90">0</Head>
+   <Head X="1" Y="27" Fixture="91">0</Head>
+   <Head X="0" Y="28" Fixture="92">0</Head>
+   <Head X="1" Y="28" Fixture="93">0</Head>
+   <Head X="0" Y="29" Fixture="94">0</Head>
+   <Head X="1" Y="29" Fixture="95">0</Head>
+   <Head X="0" Y="30" Fixture="96">0</Head>
+   <Head X="1" Y="30" Fixture="97">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>LED Pots</Name>
@@ -2428,9 +3134,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
-   <Property Name="blockSize" Value="2"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
+   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -2739,14 +3445,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color2Index" Value="Dim Orange"/>
-   <Property Name="color5Index" Value="Orange"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="presetNumber" Value="5"/>
-   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color3Index" Value="Green"/>
    <Property Name="presetCollision" Value="No"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetSize" Value="2"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Dim Orange"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -3381,10 +4087,11 @@
    <Step Number="67" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
   </Function>
   <Function ID="97" Type="Chaser" Name="Fluorescent Adolescent 🚫" Path="Pact Songs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Note="FLUORESCENT ADOLESCENT">82</Step>
   </Function>
   <Function ID="98" Type="Chaser" Name="Mr. Brightside" Path="ZZZ Other">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -4618,7 +5325,7 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="ANIMAL">82</Step>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="ARE YOU GONNA BE MY GIRL">82</Step>
    <Step Number="1" FadeIn="0" Hold="9500" FadeOut="0" Note="Bass Solo mit Tambourine">227</Step>
    <Step Number="2" FadeIn="0" Hold="7000" FadeOut="0" Note="+ Drums">229</Step>
    <Step Number="3" FadeIn="0" Hold="2500" FadeOut="0" Note="Solo Axel">226</Step>
@@ -5210,10 +5917,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="direction" Value="Left"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="orientation" Value="Vertical"/>
   </Function>
   <Function ID="224" Type="Collection" Name="Spot auf Axel 🟢">
    <Step Number="0">6</Step>
@@ -5341,10 +6048,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="direction" Value="Right"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="orientation" Value="Vertical"/>
   </Function>
   <Function ID="241" Type="Script" Name="Micstand drop down counter red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -10505,6 +11212,18 @@
    <Step Number="27" FadeIn="0" Hold="3000" FadeOut="0" Note="Blackout">36</Step>
    <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
   </Function>
+  <Function ID="253" Type="Sequence" Name="Page 07" Path="Loopback" BoundScene="254">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">44:0,255</Step>
+  </Function>
+  <Function ID="254" Type="Scene" Name="Page 07" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="44">0,0</FixtureVal>
+  </Function>
   <Function ID="255" Type="Script" Name="Fog on (Script)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
@@ -10638,6 +11357,14 @@
    <FixtureVal ID="1">6,192</FixtureVal>
    <FixtureVal ID="5">6,195</FixtureVal>
   </Function>
+  <Function ID="268" Type="Sequence" Name="Page 08" Path="Loopback" BoundScene="283">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">45:0,255</Step>
+  </Function>
   <Function ID="269" Type="Scene" Name="Fan backwards high" Path="Movement Heads/Fan">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="23">7,148,9,200</FixtureVal>
@@ -10731,7 +11458,296 @@
    <Step Number="0">228</Step>
    <Step Number="1">39</Step>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="1">
+  <Function ID="283" Type="Scene" Name="Page 08" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="45">0,0</FixtureVal>
+  </Function>
+  <Function ID="284" Type="Sequence" Name="Page 09" Path="Loopback" BoundScene="285">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">46:0,255</Step>
+  </Function>
+  <Function ID="285" Type="Scene" Name="Page 09" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="46">0,0</FixtureVal>
+  </Function>
+  <Function ID="286" Type="Sequence" Name="Page 10" Path="Loopback" BoundScene="287">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">47:0,255</Step>
+  </Function>
+  <Function ID="287" Type="Scene" Name="Page 10" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="47">0,0</FixtureVal>
+  </Function>
+  <Function ID="288" Type="Sequence" Name="Page 11" Path="Loopback" BoundScene="289">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">48:0,255</Step>
+  </Function>
+  <Function ID="289" Type="Scene" Name="Page 11" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="48">0,0</FixtureVal>
+  </Function>
+  <Function ID="290" Type="Sequence" Name="Page 12" Path="Loopback" BoundScene="291">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">49:0,255</Step>
+  </Function>
+  <Function ID="291" Type="Scene" Name="Page 12" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="49">0,0</FixtureVal>
+  </Function>
+  <Function ID="292" Type="Sequence" Name="Page 13" Path="Loopback" BoundScene="293">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">50:0,255</Step>
+  </Function>
+  <Function ID="293" Type="Scene" Name="Page 13" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="50">0,0</FixtureVal>
+  </Function>
+  <Function ID="294" Type="Sequence" Name="Page 14" Path="Loopback" BoundScene="295">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">51:0,255</Step>
+  </Function>
+  <Function ID="295" Type="Scene" Name="Page 14" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="51">0,0</FixtureVal>
+  </Function>
+  <Function ID="296" Type="Sequence" Name="Page 15" Path="Loopback" BoundScene="297">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">52:0,255</Step>
+  </Function>
+  <Function ID="297" Type="Scene" Name="Page 15" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="52">0,0</FixtureVal>
+  </Function>
+  <Function ID="298" Type="Sequence" Name="Page 16" Path="Loopback" BoundScene="299">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">53:0,255</Step>
+  </Function>
+  <Function ID="299" Type="Scene" Name="Page 16" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="53">0,0</FixtureVal>
+  </Function>
+  <Function ID="300" Type="Sequence" Name="Page 17" Path="Loopback" BoundScene="301">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">54:0,255</Step>
+  </Function>
+  <Function ID="301" Type="Scene" Name="Page 17" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="54">0,0</FixtureVal>
+  </Function>
+  <Function ID="302" Type="Sequence" Name="Page 18" Path="Loopback" BoundScene="303">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">55:0,255</Step>
+  </Function>
+  <Function ID="303" Type="Scene" Name="Page 18" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="55">0,0</FixtureVal>
+  </Function>
+  <Function ID="304" Type="Sequence" Name="Page 19" Path="Loopback" BoundScene="305">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">56:0,255</Step>
+  </Function>
+  <Function ID="305" Type="Scene" Name="Page 19" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="56">0,0</FixtureVal>
+  </Function>
+  <Function ID="306" Type="Sequence" Name="Page 20" Path="Loopback" BoundScene="307">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">57:0,255</Step>
+  </Function>
+  <Function ID="307" Type="Scene" Name="Page 20" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="57">0,0</FixtureVal>
+   <FixtureVal ID="58">0,0</FixtureVal>
+  </Function>
+  <Function ID="308" Type="Sequence" Name="Page 21" Path="Loopback" BoundScene="309">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">58:0,255</Step>
+  </Function>
+  <Function ID="309" Type="Scene" Name="Page 21" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="58">0,0</FixtureVal>
+  </Function>
+  <Function ID="310" Type="Scene" Name="play/pause" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="98">0,0</FixtureVal>
+   <FixtureVal ID="99">0,0</FixtureVal>
+   <FixtureVal ID="100">0,0</FixtureVal>
+   <FixtureVal ID="101">0,0</FixtureVal>
+  </Function>
+  <Function ID="311" Type="Sequence" Name="play/pause" Path="Loopback" BoundScene="310">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="4"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="4">98:0,255</Step>
+  </Function>
+  <Function ID="312" Type="Sequence" Name="stop" Path="Loopback" BoundScene="313">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">99:0,255</Step>
+  </Function>
+  <Function ID="313" Type="Scene" Name="play/pause" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="99">0,0</FixtureVal>
+  </Function>
+  <Function ID="314" Type="Sequence" Name="prev" Path="Loopback" BoundScene="315">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">100:0,255</Step>
+  </Function>
+  <Function ID="315" Type="Scene" Name="prev" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="100">0,0</FixtureVal>
+  </Function>
+  <Function ID="316" Type="Sequence" Name="next" Path="Loopback" BoundScene="317">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">101:0,255</Step>
+  </Function>
+  <Function ID="317" Type="Scene" Name="play/pause" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="101">0,0</FixtureVal>
+  </Function>
+  <Function ID="403" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="38">0,0</FixtureVal>
+   <FixtureVal ID="39">0,0</FixtureVal>
+   <FixtureVal ID="40">0,0</FixtureVal>
+   <FixtureVal ID="41">0,0</FixtureVal>
+   <FixtureVal ID="42">0,0</FixtureVal>
+   <FixtureVal ID="43">0,0</FixtureVal>
+  </Function>
+  <Function ID="404" Type="Sequence" Name="Page 01" Path="Loopback" BoundScene="403">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="6"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="6">38:0,255</Step>
+  </Function>
+  <Function ID="405" Type="Sequence" Name="Page 02" Path="Loopback" BoundScene="406">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">39:0,255</Step>
+  </Function>
+  <Function ID="406" Type="Scene" Name="Page 02" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="39">0,0</FixtureVal>
+  </Function>
+  <Function ID="407" Type="Sequence" Name="Page 03" Path="Loopback" BoundScene="408">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">40:0,255</Step>
+  </Function>
+  <Function ID="408" Type="Scene" Name="Page 03" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="40">0,0</FixtureVal>
+  </Function>
+  <Function ID="409" Type="Sequence" Name="Page 04" Path="Loopback" BoundScene="410">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">41:0,255</Step>
+  </Function>
+  <Function ID="410" Type="Scene" Name="Page 04" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="41">0,0</FixtureVal>
+  </Function>
+  <Function ID="411" Type="Sequence" Name="Page 05" Path="Loopback" BoundScene="412">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">42:0,255</Step>
+  </Function>
+  <Function ID="412" Type="Scene" Name="Page 05" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="42">0,0</FixtureVal>
+  </Function>
+  <Function ID="413" Type="Sequence" Name="Page 06" Path="Loopback" BoundScene="414">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">43:0,255</Step>
+  </Function>
+  <Function ID="414" Type="Scene" Name="Page 06" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="43">0,0</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -10747,6 +11763,26 @@
    <FxItem ID="10" XPos="3555.56" YPos="4000"/>
    <FxItem ID="11" XPos="1953.7" YPos="138.889"/>
    <FxItem ID="21" XPos="2694.44" YPos="-296.296"/>
+   <FxItem ID="38" XPos="18.9634" YPos="1192.33"/>
+   <FxItem ID="39" XPos="441.593" YPos="1129.37"/>
+   <FxItem ID="40" XPos="921.405" YPos="1193.59"/>
+   <FxItem ID="41" XPos="1425.7" YPos="1193.59"/>
+   <FxItem ID="42" XPos="1782.42" YPos="1163.76"/>
+   <FxItem ID="43" XPos="2206.13" YPos="1178.98"/>
+   <FxItem ID="44" XPos="2682.87" YPos="1121.2"/>
+   <FxItem ID="45" XPos="3091.74" YPos="1165.14"/>
+   <FxItem ID="46" XPos="3467.89" YPos="1183.49"/>
+   <FxItem ID="47" XPos="3871.56" YPos="1155.96"/>
+   <FxItem ID="48" XPos="73.3945" YPos="1697.25"/>
+   <FxItem ID="49" XPos="489.691" YPos="1675.26"/>
+   <FxItem ID="50" XPos="944.954" YPos="1724.77"/>
+   <FxItem ID="51" XPos="1412.84" YPos="1688.07"/>
+   <FxItem ID="52" XPos="1862.39" YPos="1697.25"/>
+   <FxItem ID="53" XPos="2263.47" YPos="1682.63"/>
+   <FxItem ID="54" XPos="2676.65" YPos="1664.67"/>
+   <FxItem ID="55" XPos="3077.84" YPos="1682.63"/>
+   <FxItem ID="56" XPos="3473.05" YPos="1694.61"/>
+   <FxItem ID="57" XPos="3886.23" YPos="1688.62"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -10766,7 +11802,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="1910" Y="495" Width="485" Height="775"/>
+    <WindowState Visible="True" X="1915" Y="490" Width="475" Height="590"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -10775,7 +11811,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="🔄 round'n'round" ID="4" Icon="">
-     <WindowState Visible="False" X="170" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10789,7 +11825,7 @@
      <Input Universe="1" Channel="136"/>
     </Button>
     <Button Caption="🎉 bunt" ID="1" Icon="">
-     <WindowState Visible="False" X="170" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10803,7 +11839,7 @@
      <Input Universe="1" Channel="137"/>
     </Button>
     <Button Caption="🔵 slow blue" ID="6" Icon="">
-     <WindowState Visible="False" X="15" Y="500" Width="75" Height="70"/>
+     <WindowState Visible="True" X="15" Y="500" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10817,7 +11853,7 @@
      <Input Universe="1" Channel="128"/>
     </Button>
     <Button Caption="↕️ up'n'down" ID="7" Icon="">
-     <WindowState Visible="False" X="95" Y="425" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="425" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10831,7 +11867,7 @@
      <Input Universe="1" Channel="131"/>
     </Button>
     <Button Caption="↔️ left'n'right" ID="8" Icon="">
-     <WindowState Visible="False" X="95" Y="350" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="350" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10845,7 +11881,7 @@
      <Input Universe="1" Channel="132"/>
     </Button>
     <Button Caption="🚶walking" ID="9" Icon="">
-     <WindowState Visible="False" X="95" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10859,7 +11895,7 @@
      <Input Universe="1" Channel="130"/>
     </Button>
     <Button Caption="🏊🏻‍ swimming" ID="10" Icon="">
-     <WindowState Visible="False" X="170" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10873,7 +11909,7 @@
      <Input Universe="1" Channel="135"/>
     </Button>
     <Button Caption="✳️Strobe" ID="11" Icon="">
-     <WindowState Visible="False" X="320" Y="420" Width="70" Height="75"/>
+     <WindowState Visible="True" X="320" Y="420" Width="70" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10888,7 +11924,7 @@
      <Input Universe="1" Channel="160"/>
     </Button>
     <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="170" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10902,7 +11938,7 @@
      <Input Universe="1" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="False" X="170" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="True" X="170" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10916,7 +11952,7 @@
      <Input Universe="1" Channel="152"/>
     </Button>
     <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="245" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="True" X="245" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10930,7 +11966,7 @@
      <Input Universe="1" Channel="150"/>
     </Button>
     <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="320" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="True" X="320" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10944,7 +11980,7 @@
      <Input Universe="1" Channel="151"/>
     </Button>
     <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="95" Y="85" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="85" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10958,7 +11994,7 @@
      <Input Universe="1" Channel="146"/>
     </Button>
     <Button Caption="🔦 Search-light" ID="17" Icon="">
-     <WindowState Visible="False" X="15" Y="425" Width="75" Height="70"/>
+     <WindowState Visible="True" X="15" Y="425" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10972,7 +12008,7 @@
      <Input Universe="1" Channel="129"/>
     </Button>
     <Button Caption="🔔 Alarm" ID="18" Icon="">
-     <WindowState Visible="False" X="95" Y="200" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="200" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -10986,7 +12022,7 @@
      <Input Universe="1" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="170" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="True" X="175" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11000,7 +12036,7 @@
      <Input Universe="1" Channel="138"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="False" X="245" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="True" X="245" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11014,7 +12050,7 @@
      <Input Universe="1" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="395" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="True" X="395" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11029,7 +12065,7 @@
      <Input Universe="1" Channel="158"/>
     </Button>
     <Button Caption="🔆 blinking" ID="20" Icon="">
-     <WindowState Visible="False" X="95" Y="275" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="275" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11043,7 +12079,7 @@
      <Input Universe="1" Channel="133"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="False" X="320" Y="10" Width="70" Height="70"/>
+     <WindowState Visible="True" X="320" Y="10" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11057,7 +12093,7 @@
      <Input Universe="1" Channel="153"/>
     </Button>
     <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="False" X="320" Y="500" Width="70" Height="70"/>
+     <WindowState Visible="True" X="320" Y="500" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11072,7 +12108,7 @@
      <Input Universe="1" Channel="159"/>
     </Button>
     <Slider Caption="Haze" ID="29" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="False" X="20" Y="85" Width="70" Height="335"/>
+     <WindowState Visible="True" X="20" Y="85" Width="70" Height="335"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11097,7 +12133,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="20" Width="1865" Height="1255"/>
+    <WindowState Visible="True" X="0" Y="0" Width="1210" Height="1265"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -11105,30 +12141,36 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="27"/>
+    <Multipage PagesNum="60" CurrentPage="0"/>
     <Shortcut Page="0" Name="All the small things">
-     <Input Universe="1" Channel="399"/>
+     <Input Universe="10" Channel="0"/>
      <Key>Shift+%</Key>
     </Shortcut>
-    <Shortcut Page="1" Name="Along comes Mary"/>
+    <Shortcut Page="1" Name="Along comes Mary">
+     <Input Universe="10" Channel="1"/>
+    </Shortcut>
     <Shortcut Page="2" Name="Always where I need to be">
-     <Input Universe="1" Channel="385"/>
+     <Input Universe="10" Channel="2"/>
      <Key>1</Key>
     </Shortcut>
-    <Shortcut Page="3" Name="Animal"/>
+    <Shortcut Page="3" Name="Animal">
+     <Input Universe="10" Channel="3"/>
+    </Shortcut>
     <Shortcut Page="4" Name="Are you gonna be my girl">
-     <Input Universe="1" Channel="393"/>
+     <Input Universe="10" Channel="4"/>
      <Key>9</Key>
     </Shortcut>
     <Shortcut Page="5" Name="Basket Case">
-     <Input Universe="1" Channel="405"/>
+     <Input Universe="10" Channel="5"/>
      <Key>Alt+1</Key>
     </Shortcut>
     <Shortcut Page="6" Name="Boys don't cry">
-     <Input Universe="1" Channel="401"/>
+     <Input Universe="10" Channel="6"/>
      <Key>Shift+/</Key>
     </Shortcut>
-    <Shortcut Page="7" Name="Boys cry + summer"/>
+    <Shortcut Page="7" Name="Boys cry + summer">
+     <Input Universe="10" Channel="7"/>
+    </Shortcut>
     <Shortcut Page="8" Name="Seite: 9">
      <Input Universe="2" Channel="393"/>
     </Shortcut>
@@ -11136,21 +12178,29 @@
      <Input Universe="2" Channel="394"/>
     </Shortcut>
     <Shortcut Page="10" Name="Chalsea Dagger">
-     <Input Universe="1" Channel="408"/>
+     <Input Universe="10" Channel="10"/>
      <Key>Alt+4</Key>
     </Shortcut>
-    <Shortcut Page="11" Name="Creep"/>
-    <Shortcut Page="12" Name="Dancing with myself"/>
+    <Shortcut Page="11" Name="Creep">
+     <Input Universe="10" Channel="11"/>
+    </Shortcut>
+    <Shortcut Page="12" Name="Dancing with myself">
+     <Input Universe="10" Channel="12"/>
+    </Shortcut>
     <Shortcut Page="13" Name="Down in the past">
-     <Input Universe="1" Channel="395"/>
+     <Input Universe="10" Channel="13"/>
      <Key>Shift+!</Key>
     </Shortcut>
-    <Shortcut Page="14" Name="Every you every me"/>
+    <Shortcut Page="14" Name="Every you every me">
+     <Input Universe="10" Channel="14"/>
+    </Shortcut>
     <Shortcut Page="15" Name="Fight for your right">
-     <Input Universe="1" Channel="407"/>
+     <Input Universe="10" Channel="15"/>
      <Key>Alt+3</Key>
     </Shortcut>
-    <Shortcut Page="16" Name="Fluorescent Adolescent"/>
+    <Shortcut Page="16" Name="Fluorescent Adolescent">
+     <Input Universe="10" Channel="16"/>
+    </Shortcut>
     <Shortcut Page="17" Name="Seite: 18">
      <Input Universe="2" Channel="402"/>
     </Shortcut>
@@ -11160,30 +12210,34 @@
     <Shortcut Page="19" Name="Seite: 20">
      <Input Universe="2" Channel="404"/>
     </Shortcut>
-    <Shortcut Page="20" Name="Hail to the freaks"/>
+    <Shortcut Page="20" Name="Hail to the freaks">
+     <Input Universe="10" Channel="20"/>
+    </Shortcut>
     <Shortcut Page="21" Name="Inside">
-     <Input Universe="1" Channel="390"/>
+     <Input Universe="10" Channel="21"/>
      <Key>6</Key>
     </Shortcut>
     <Shortcut Page="22" Name="Join me in death">
-     <Input Universe="1" Channel="389"/>
+     <Input Universe="10" Channel="22"/>
      <Key>5</Key>
     </Shortcut>
-    <Shortcut Page="23" Name="Last Nite"/>
+    <Shortcut Page="23" Name="Last Nite">
+     <Input Universe="10" Channel="23"/>
+    </Shortcut>
     <Shortcut Page="24" Name="Lonely Boy">
-     <Input Universe="1" Channel="392"/>
+     <Input Universe="10" Channel="24"/>
      <Key>8</Key>
     </Shortcut>
     <Shortcut Page="25" Name="Mr. Brightside">
-     <Input Universe="1" Channel="400"/>
+     <Input Universe="10" Channel="25"/>
      <Key>Shift+&amp;</Key>
     </Shortcut>
     <Shortcut Page="26" Name="Narcotic">
-     <Input Universe="1" Channel="403"/>
+     <Input Universe="10" Channel="26"/>
      <Key>Shift+)</Key>
     </Shortcut>
     <Shortcut Page="27" Name="Killing in the name of">
-     <Input Universe="1" Channel="409"/>
+     <Input Universe="10" Channel="27"/>
      <Key>Alt+5</Key>
     </Shortcut>
     <Shortcut Page="28" Name="Seite: 29">
@@ -11276,7 +12330,7 @@
     </Shortcut>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="22">
-     <WindowState Visible="False" X="5" Y="40" Width="1835" Height="1200"/>
+     <WindowState Visible="True" X="15" Y="50" Width="1180" Height="1205"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11287,18 +12341,20 @@
      <Chaser>88</Chaser>
      <NextPrevBehavior>3</NextPrevBehavior>
      <Next>
-      <Input Universe="1" Channel="173"/>
+      <Input Universe="10" Channel="63"/>
      </Next>
      <Previous>
-      <Input Universe="1" Channel="172"/>
+      <Input Universe="10" Channel="62"/>
      </Previous>
      <Playback>
-      <Input Universe="1" Channel="171"/>
+      <Input Universe="10" Channel="60"/>
      </Playback>
-     <Stop/>
+     <Stop>
+      <Input Universe="10" Channel="61"/>
+     </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="23" Page="1">
-     <WindowState Visible="False" X="5" Y="40" Width="1825" Height="1205"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1190" Height="1220"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11322,7 +12378,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="25" Page="2">
-     <WindowState Visible="False" X="15" Y="55" Width="1835" Height="1190"/>
+     <WindowState Visible="False" X="15" Y="55" Width="1185" Height="1200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11346,7 +12402,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="92" Page="4">
-     <WindowState Visible="False" X="10" Y="50" Width="1860" Height="1210"/>
+     <WindowState Visible="False" X="15" Y="45" Width="1860" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -11442,7 +12498,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="96" Page="3">
-     <WindowState Visible="False" X="20" Y="45" Width="1815" Height="1195"/>
+     <WindowState Visible="False" X="20" Y="45" Width="1150" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12178,13 +13234,13 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="126" Page="50">
-     <WindowState Visible="False" X="5" Y="40" Width="1850" Height="1210"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1190" Height="1220"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0</Font>
+      <Font>Ubuntu Light,20,-1,5,25,0,0,0,0,0</Font>
      </Appearance>
      <Chaser>72</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
@@ -12313,7 +13369,7 @@
     </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="False" X="2185" Y="680" Width="185" Height="185"/>
+    <WindowState Visible="True" X="2185" Y="680" Width="185" Height="185"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -12349,7 +13405,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="8">75</Function>
    </SpeedDial>
    <Button Caption="ignite 5" ID="26" Icon="">
-    <WindowState Visible="False" X="1930" Y="505" Width="70" Height="70"/>
+    <WindowState Visible="True" X="1930" Y="505" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -12362,7 +13418,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <AudioTriggers BarsNumber="8" Caption="Audio Control" ID="27">
-    <WindowState Visible="False" X="1905" Y="25" Width="515" Height="390"/>
+    <WindowState Visible="True" X="1905" Y="25" Width="515" Height="390"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -12393,9 +13449,299 @@
      <DMXChannels>3,0,3,1,3,2</DMXChannels>
     </SpectrumBar>
    </AudioTriggers>
+   <SoloFrame Caption="" ID="54">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="1210" Y="0" Width="680" Height="2165"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Always" ID="55" Icon="">
+     <WindowState Visible="True" X="10" Y="45" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="407"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Small things" ID="32" Icon="">
+     <WindowState Visible="True" X="10" Y="300" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="404"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Mary" ID="33" Icon="">
+     <WindowState Visible="True" X="10" Y="370" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="405"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Animal" ID="34" Icon="">
+     <WindowState Visible="True" X="10" Y="440" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="409"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Are you gonna" ID="35" Icon="">
+     <WindowState Visible="True" X="10" Y="510" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,16,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="411"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Basket Case" ID="37" Icon="">
+     <WindowState Visible="True" X="10" Y="580" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="413"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Boys don't cry" ID="38" Icon="">
+     <WindowState Visible="True" X="10" Y="650" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,16,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="253"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Boys cry+summer" ID="39" Icon="">
+     <WindowState Visible="True" X="10" Y="720" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="268"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Chalsea Dagger" ID="40" Icon="">
+     <WindowState Visible="True" X="10" Y="790" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="288"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Dancing with myself" ID="41" Icon="">
+     <WindowState Visible="True" X="10" Y="930" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,12,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="292"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Creep" ID="42" Icon="">
+     <WindowState Visible="True" X="5" Y="865" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="290"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Down in the past" ID="43" Icon="">
+     <WindowState Visible="True" X="355" Y="300" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="294"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Every you" ID="44" Icon="">
+     <WindowState Visible="True" X="355" Y="370" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="296"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Fight 4U Right" ID="45" Icon="">
+     <WindowState Visible="True" X="355" Y="440" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,17,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="298"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Fluorescent" ID="47" Icon="">
+     <WindowState Visible="True" X="355" Y="510" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="300"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Hail 2 Freaks" ID="48" Icon="">
+     <WindowState Visible="True" X="355" Y="580" Width="315" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="308"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <Button Caption="Button 50" ID="50" Icon="">
+    <WindowState Visible="True" X="0" Y="0" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="play/pause" ID="49" Icon="">
+    <WindowState Visible="True" X="1915" Y="1090" Width="150" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="311"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="stop" ID="51" Icon="">
+    <WindowState Visible="True" X="2075" Y="1090" Width="80" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="312"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="prev" ID="52" Icon="">
+    <WindowState Visible="True" X="2165" Y="1090" Width="80" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="314"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="next" ID="53" Icon="">
+    <WindowState Visible="True" X="2255" Y="1090" Width="80" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="316"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
-   <Size Width="2400" Height="1280"/>
+   <Size Width="2400" Height="2400"/>
    <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
   </Properties>
  </VirtualConsole>
