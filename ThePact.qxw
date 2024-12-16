@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
-  <Author>Christian Prison</Author>
+  <Version>4.13.1</Version>
+  <Author>thepact</Author>
  </Creator>
  <Engine Autostart="82">
   <InputOutputMap>
@@ -13,36 +13,36 @@
     <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Input" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="0" Profile="Generic MIDI"/>
+    <Input Plugin="MIDI" UID="None" Line="1" Profile="Generic MIDI"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.112" outputUni="3"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.106" outputUni="0"/>
     </Output>
    </Universe>
    <Universe Name="Säule1 (out)" ID="3">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.111" outputUni="4"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.111" outputUni="12"/>
     </Output>
    </Universe>
    <Universe Name="Säule2 (out)" ID="4">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.110" outputUni="5"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.110"/>
     </Output>
    </Universe>
    <Universe Name="Säule3 (out)" ID="5">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.109" outputUni="6"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.109"/>
     </Output>
    </Universe>
    <Universe Name="Säule4 (out)" ID="6">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.108" outputUni="7"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.108"/>
     </Output>
    </Universe>
    <Universe Name="Backlights" ID="7">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.0.107" outputUni="8"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.107"/>
     </Output>
    </Universe>
    <Universe Name="Audio In" ID="8"/>
@@ -55,13 +55,13 @@
     <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
    </Universe>
    <Universe Name="DisplayLEDs 1 (out)" ID="11">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.178.166" outputUni="0"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputUni="8"/>
     </Output>
    </Universe>
    <Universe Name="DisplayLEDs 2 (out)" ID="12">
-    <Output Plugin="ArtNet" UID="192.168.178.167" Line="1">
-     <PluginParameters outputIP="192.168.178.166" outputUni="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputUni="9"/>
     </Output>
    </Universe>
   </InputOutputMap>
@@ -1126,78 +1126,6 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>102</ID>
-   <Name>Display LEDs 1 - Reihe 1</Name>
-   <Universe>11</Universe>
-   <Address>0</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>103</ID>
-   <Name>Display LEDs 1 - Reihe 2</Name>
-   <Universe>11</Universe>
-   <Address>24</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>104</ID>
-   <Name>Display LEDs 1 - Reihe 3</Name>
-   <Universe>11</Universe>
-   <Address>48</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>105</ID>
-   <Name>Display LEDs 1 - Reihe 4</Name>
-   <Universe>11</Universe>
-   <Address>72</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>106</ID>
-   <Name>Display LEDs 1 - Reihe 5</Name>
-   <Universe>11</Universe>
-   <Address>96</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>107</ID>
-   <Name>Display LEDs 1 - Reihe 6</Name>
-   <Universe>11</Universe>
-   <Address>120</Address>
-   <Channels>24</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>RGBPanel</Model>
    <Mode>GRB</Mode>
    <Weight>100</Weight>
    <Height>25</Height>
@@ -1246,11 +1174,83 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>112</ID>
-   <Name>Display LEDs 1 - Reihe 7</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>122</ID>
+   <Name>Display LEDs - Row 1</Name>
+   <Universe>11</Universe>
+   <Address>0</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>123</ID>
+   <Name>Display LEDs - Row 2</Name>
+   <Universe>11</Universe>
+   <Address>24</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>124</ID>
+   <Name>Display LEDs - Row 3</Name>
+   <Universe>11</Universe>
+   <Address>48</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>125</ID>
+   <Name>Display LEDs - Row 4</Name>
+   <Universe>11</Universe>
+   <Address>72</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>126</ID>
+   <Name>Display LEDs - Row 5</Name>
+   <Universe>11</Universe>
+   <Address>96</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>127</ID>
+   <Name>Display LEDs - Row 6</Name>
+   <Universe>11</Universe>
+   <Address>120</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>128</ID>
+   <Name>Display LEDs - Row 7</Name>
    <Universe>11</Universe>
    <Address>144</Address>
    <Channels>24</Channels>
@@ -1258,11 +1258,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>113</ID>
-   <Name>Display LEDs 1 - Reihe 8</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>129</ID>
+   <Name>Display LEDs - Row 8</Name>
    <Universe>11</Universe>
    <Address>168</Address>
    <Channels>24</Channels>
@@ -1270,11 +1270,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>114</ID>
-   <Name>Display LEDs 1 - Reihe 9</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>130</ID>
+   <Name>Display LEDs - Row 9</Name>
    <Universe>11</Universe>
    <Address>192</Address>
    <Channels>24</Channels>
@@ -1282,11 +1282,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>115</ID>
-   <Name>Display LEDs 1 - Reihe 10</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>131</ID>
+   <Name>Display LEDs - Row 10</Name>
    <Universe>11</Universe>
    <Address>216</Address>
    <Channels>24</Channels>
@@ -1294,11 +1294,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>116</ID>
-   <Name>Display LEDs 1 - Reihe 11</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>132</ID>
+   <Name>Display LEDs - Row 11</Name>
    <Universe>11</Universe>
    <Address>240</Address>
    <Channels>24</Channels>
@@ -1306,11 +1306,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>117</ID>
-   <Name>Display LEDs 1 - Reihe 12</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>133</ID>
+   <Name>Display LEDs - Row 12</Name>
    <Universe>11</Universe>
    <Address>264</Address>
    <Channels>24</Channels>
@@ -1318,11 +1318,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>118</ID>
-   <Name>Display LEDs 1 - Reihe 13</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>134</ID>
+   <Name>Display LEDs - Row 13</Name>
    <Universe>11</Universe>
    <Address>288</Address>
    <Channels>24</Channels>
@@ -1330,11 +1330,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>119</ID>
-   <Name>Display LEDs 1 - Reihe 14</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>135</ID>
+   <Name>Display LEDs - Row 14</Name>
    <Universe>11</Universe>
    <Address>312</Address>
    <Channels>24</Channels>
@@ -1342,11 +1342,11 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>120</ID>
-   <Name>Display LEDs 1 - Reihe 15</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>136</ID>
+   <Name>Display LEDs - Row 15</Name>
    <Universe>11</Universe>
    <Address>336</Address>
    <Channels>24</Channels>
@@ -1354,13 +1354,73 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>RGBPanel</Model>
-   <Mode>RGB</Mode>
-   <Weight>160</Weight>
-   <Height>5</Height>
-   <ID>121</ID>
-   <Name>Display LEDs 1 - Reihe 16</Name>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>137</ID>
+   <Name>Display LEDs - Row 16</Name>
    <Universe>11</Universe>
    <Address>360</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>138</ID>
+   <Name>Display LEDs - Row 17</Name>
+   <Universe>11</Universe>
+   <Address>384</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>139</ID>
+   <Name>Display LEDs - Row 18</Name>
+   <Universe>11</Universe>
+   <Address>408</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>140</ID>
+   <Name>Display LEDs - Row 19</Name>
+   <Universe>11</Universe>
+   <Address>432</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>141</ID>
+   <Name>Display LEDs - Row 20</Name>
+   <Universe>11</Universe>
+   <Address>456</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>GRB</Mode>
+   <Weight>210</Weight>
+   <Height>3</Height>
+   <ID>142</ID>
+   <Name>Display LEDs - Row 21</Name>
+   <Universe>11</Universe>
+   <Address>480</Address>
    <Channels>24</Channels>
   </Fixture>
   <FixtureGroup ID="0">
@@ -2825,136 +2885,176 @@
    <Head X="3" Y="29" Fixture="36">29</Head>
   </FixtureGroup>
   <FixtureGroup ID="17">
-   <Name>Display LEDs 1</Name>
-   <Size X="16" Y="8"/>
-   <Head X="0" Y="0" Fixture="102">0</Head>
-   <Head X="1" Y="0" Fixture="103">7</Head>
-   <Head X="2" Y="0" Fixture="104">0</Head>
-   <Head X="3" Y="0" Fixture="105">7</Head>
-   <Head X="4" Y="0" Fixture="106">0</Head>
-   <Head X="5" Y="0" Fixture="107">7</Head>
-   <Head X="6" Y="0" Fixture="112">0</Head>
-   <Head X="7" Y="0" Fixture="113">7</Head>
-   <Head X="8" Y="0" Fixture="114">0</Head>
-   <Head X="9" Y="0" Fixture="115">7</Head>
-   <Head X="10" Y="0" Fixture="116">0</Head>
-   <Head X="11" Y="0" Fixture="117">7</Head>
-   <Head X="12" Y="0" Fixture="118">0</Head>
-   <Head X="13" Y="0" Fixture="119">7</Head>
-   <Head X="14" Y="0" Fixture="120">0</Head>
-   <Head X="15" Y="0" Fixture="121">7</Head>
-   <Head X="0" Y="1" Fixture="102">1</Head>
-   <Head X="1" Y="1" Fixture="103">6</Head>
-   <Head X="2" Y="1" Fixture="104">1</Head>
-   <Head X="3" Y="1" Fixture="105">6</Head>
-   <Head X="4" Y="1" Fixture="106">1</Head>
-   <Head X="5" Y="1" Fixture="107">6</Head>
-   <Head X="6" Y="1" Fixture="112">1</Head>
-   <Head X="7" Y="1" Fixture="113">6</Head>
-   <Head X="8" Y="1" Fixture="114">1</Head>
-   <Head X="9" Y="1" Fixture="115">6</Head>
-   <Head X="10" Y="1" Fixture="116">1</Head>
-   <Head X="11" Y="1" Fixture="117">6</Head>
-   <Head X="12" Y="1" Fixture="118">1</Head>
-   <Head X="13" Y="1" Fixture="119">6</Head>
-   <Head X="14" Y="1" Fixture="120">1</Head>
-   <Head X="15" Y="1" Fixture="121">6</Head>
-   <Head X="0" Y="2" Fixture="102">2</Head>
-   <Head X="1" Y="2" Fixture="103">5</Head>
-   <Head X="2" Y="2" Fixture="104">2</Head>
-   <Head X="3" Y="2" Fixture="105">5</Head>
-   <Head X="4" Y="2" Fixture="106">2</Head>
-   <Head X="5" Y="2" Fixture="107">5</Head>
-   <Head X="6" Y="2" Fixture="112">2</Head>
-   <Head X="7" Y="2" Fixture="113">5</Head>
-   <Head X="8" Y="2" Fixture="114">2</Head>
-   <Head X="9" Y="2" Fixture="115">5</Head>
-   <Head X="10" Y="2" Fixture="116">2</Head>
-   <Head X="11" Y="2" Fixture="117">5</Head>
-   <Head X="12" Y="2" Fixture="118">2</Head>
-   <Head X="13" Y="2" Fixture="119">5</Head>
-   <Head X="14" Y="2" Fixture="120">2</Head>
-   <Head X="15" Y="2" Fixture="121">5</Head>
-   <Head X="0" Y="3" Fixture="102">3</Head>
-   <Head X="1" Y="3" Fixture="103">4</Head>
-   <Head X="2" Y="3" Fixture="104">3</Head>
-   <Head X="3" Y="3" Fixture="105">4</Head>
-   <Head X="4" Y="3" Fixture="106">3</Head>
-   <Head X="5" Y="3" Fixture="107">4</Head>
-   <Head X="6" Y="3" Fixture="112">3</Head>
-   <Head X="7" Y="3" Fixture="113">4</Head>
-   <Head X="8" Y="3" Fixture="114">3</Head>
-   <Head X="9" Y="3" Fixture="115">4</Head>
-   <Head X="10" Y="3" Fixture="116">3</Head>
-   <Head X="11" Y="3" Fixture="117">4</Head>
-   <Head X="12" Y="3" Fixture="118">3</Head>
-   <Head X="13" Y="3" Fixture="119">4</Head>
-   <Head X="14" Y="3" Fixture="120">3</Head>
-   <Head X="15" Y="3" Fixture="121">4</Head>
-   <Head X="0" Y="4" Fixture="102">4</Head>
-   <Head X="1" Y="4" Fixture="103">3</Head>
-   <Head X="2" Y="4" Fixture="104">4</Head>
-   <Head X="3" Y="4" Fixture="105">3</Head>
-   <Head X="4" Y="4" Fixture="106">4</Head>
-   <Head X="5" Y="4" Fixture="107">3</Head>
-   <Head X="6" Y="4" Fixture="112">4</Head>
-   <Head X="7" Y="4" Fixture="113">3</Head>
-   <Head X="8" Y="4" Fixture="114">4</Head>
-   <Head X="9" Y="4" Fixture="115">3</Head>
-   <Head X="10" Y="4" Fixture="116">4</Head>
-   <Head X="11" Y="4" Fixture="117">3</Head>
-   <Head X="12" Y="4" Fixture="118">4</Head>
-   <Head X="13" Y="4" Fixture="119">3</Head>
-   <Head X="14" Y="4" Fixture="120">4</Head>
-   <Head X="15" Y="4" Fixture="121">3</Head>
-   <Head X="0" Y="5" Fixture="102">5</Head>
-   <Head X="1" Y="5" Fixture="103">2</Head>
-   <Head X="2" Y="5" Fixture="104">5</Head>
-   <Head X="3" Y="5" Fixture="105">2</Head>
-   <Head X="4" Y="5" Fixture="106">5</Head>
-   <Head X="5" Y="5" Fixture="107">2</Head>
-   <Head X="6" Y="5" Fixture="112">5</Head>
-   <Head X="7" Y="5" Fixture="113">2</Head>
-   <Head X="8" Y="5" Fixture="114">5</Head>
-   <Head X="9" Y="5" Fixture="115">2</Head>
-   <Head X="10" Y="5" Fixture="116">5</Head>
-   <Head X="11" Y="5" Fixture="117">2</Head>
-   <Head X="12" Y="5" Fixture="118">5</Head>
-   <Head X="13" Y="5" Fixture="119">2</Head>
-   <Head X="14" Y="5" Fixture="120">5</Head>
-   <Head X="15" Y="5" Fixture="121">2</Head>
-   <Head X="0" Y="6" Fixture="102">6</Head>
-   <Head X="1" Y="6" Fixture="103">1</Head>
-   <Head X="2" Y="6" Fixture="104">6</Head>
-   <Head X="3" Y="6" Fixture="105">1</Head>
-   <Head X="4" Y="6" Fixture="106">6</Head>
-   <Head X="5" Y="6" Fixture="107">1</Head>
-   <Head X="6" Y="6" Fixture="112">6</Head>
-   <Head X="7" Y="6" Fixture="113">1</Head>
-   <Head X="8" Y="6" Fixture="114">6</Head>
-   <Head X="9" Y="6" Fixture="115">1</Head>
-   <Head X="10" Y="6" Fixture="116">6</Head>
-   <Head X="11" Y="6" Fixture="117">1</Head>
-   <Head X="12" Y="6" Fixture="118">6</Head>
-   <Head X="13" Y="6" Fixture="119">1</Head>
-   <Head X="14" Y="6" Fixture="120">6</Head>
-   <Head X="15" Y="6" Fixture="121">1</Head>
-   <Head X="0" Y="7" Fixture="102">7</Head>
-   <Head X="1" Y="7" Fixture="103">0</Head>
-   <Head X="2" Y="7" Fixture="104">7</Head>
-   <Head X="3" Y="7" Fixture="105">0</Head>
-   <Head X="4" Y="7" Fixture="106">7</Head>
-   <Head X="5" Y="7" Fixture="107">0</Head>
-   <Head X="6" Y="7" Fixture="112">7</Head>
-   <Head X="7" Y="7" Fixture="113">0</Head>
-   <Head X="8" Y="7" Fixture="114">7</Head>
-   <Head X="9" Y="7" Fixture="115">0</Head>
-   <Head X="10" Y="7" Fixture="116">7</Head>
-   <Head X="11" Y="7" Fixture="117">0</Head>
-   <Head X="12" Y="7" Fixture="118">7</Head>
-   <Head X="13" Y="7" Fixture="119">0</Head>
-   <Head X="14" Y="7" Fixture="120">7</Head>
-   <Head X="15" Y="7" Fixture="121">0</Head>
+   <Name>Display LEDs</Name>
+   <Size X="21" Y="8"/>
+   <Head X="0" Y="0" Fixture="122">0</Head>
+   <Head X="1" Y="0" Fixture="123">7</Head>
+   <Head X="2" Y="0" Fixture="124">0</Head>
+   <Head X="3" Y="0" Fixture="125">7</Head>
+   <Head X="4" Y="0" Fixture="126">0</Head>
+   <Head X="5" Y="0" Fixture="127">7</Head>
+   <Head X="6" Y="0" Fixture="128">0</Head>
+   <Head X="7" Y="0" Fixture="129">7</Head>
+   <Head X="8" Y="0" Fixture="130">0</Head>
+   <Head X="9" Y="0" Fixture="131">7</Head>
+   <Head X="10" Y="0" Fixture="132">0</Head>
+   <Head X="11" Y="0" Fixture="133">7</Head>
+   <Head X="12" Y="0" Fixture="134">0</Head>
+   <Head X="13" Y="0" Fixture="135">7</Head>
+   <Head X="14" Y="0" Fixture="136">0</Head>
+   <Head X="15" Y="0" Fixture="137">7</Head>
+   <Head X="16" Y="0" Fixture="138">0</Head>
+   <Head X="17" Y="0" Fixture="139">7</Head>
+   <Head X="18" Y="0" Fixture="140">0</Head>
+   <Head X="19" Y="0" Fixture="141">7</Head>
+   <Head X="20" Y="0" Fixture="142">0</Head>
+   <Head X="0" Y="1" Fixture="122">1</Head>
+   <Head X="1" Y="1" Fixture="123">6</Head>
+   <Head X="2" Y="1" Fixture="124">1</Head>
+   <Head X="3" Y="1" Fixture="125">6</Head>
+   <Head X="4" Y="1" Fixture="126">1</Head>
+   <Head X="5" Y="1" Fixture="127">6</Head>
+   <Head X="6" Y="1" Fixture="128">1</Head>
+   <Head X="7" Y="1" Fixture="129">6</Head>
+   <Head X="8" Y="1" Fixture="130">1</Head>
+   <Head X="9" Y="1" Fixture="131">6</Head>
+   <Head X="10" Y="1" Fixture="132">1</Head>
+   <Head X="11" Y="1" Fixture="133">6</Head>
+   <Head X="12" Y="1" Fixture="134">1</Head>
+   <Head X="13" Y="1" Fixture="135">6</Head>
+   <Head X="14" Y="1" Fixture="136">1</Head>
+   <Head X="15" Y="1" Fixture="137">6</Head>
+   <Head X="16" Y="1" Fixture="138">1</Head>
+   <Head X="17" Y="1" Fixture="139">6</Head>
+   <Head X="18" Y="1" Fixture="140">1</Head>
+   <Head X="19" Y="1" Fixture="141">6</Head>
+   <Head X="20" Y="1" Fixture="142">1</Head>
+   <Head X="0" Y="2" Fixture="122">2</Head>
+   <Head X="1" Y="2" Fixture="123">5</Head>
+   <Head X="2" Y="2" Fixture="124">2</Head>
+   <Head X="3" Y="2" Fixture="125">5</Head>
+   <Head X="4" Y="2" Fixture="126">2</Head>
+   <Head X="5" Y="2" Fixture="127">5</Head>
+   <Head X="6" Y="2" Fixture="128">2</Head>
+   <Head X="7" Y="2" Fixture="129">5</Head>
+   <Head X="8" Y="2" Fixture="130">2</Head>
+   <Head X="9" Y="2" Fixture="131">5</Head>
+   <Head X="10" Y="2" Fixture="132">2</Head>
+   <Head X="11" Y="2" Fixture="133">5</Head>
+   <Head X="12" Y="2" Fixture="134">2</Head>
+   <Head X="13" Y="2" Fixture="135">5</Head>
+   <Head X="14" Y="2" Fixture="136">2</Head>
+   <Head X="15" Y="2" Fixture="137">5</Head>
+   <Head X="16" Y="2" Fixture="138">2</Head>
+   <Head X="17" Y="2" Fixture="139">5</Head>
+   <Head X="18" Y="2" Fixture="140">2</Head>
+   <Head X="19" Y="2" Fixture="141">5</Head>
+   <Head X="20" Y="2" Fixture="142">2</Head>
+   <Head X="0" Y="3" Fixture="122">3</Head>
+   <Head X="1" Y="3" Fixture="123">4</Head>
+   <Head X="2" Y="3" Fixture="124">3</Head>
+   <Head X="3" Y="3" Fixture="125">4</Head>
+   <Head X="4" Y="3" Fixture="126">3</Head>
+   <Head X="5" Y="3" Fixture="127">4</Head>
+   <Head X="6" Y="3" Fixture="128">3</Head>
+   <Head X="7" Y="3" Fixture="129">4</Head>
+   <Head X="8" Y="3" Fixture="130">3</Head>
+   <Head X="9" Y="3" Fixture="131">4</Head>
+   <Head X="10" Y="3" Fixture="132">3</Head>
+   <Head X="11" Y="3" Fixture="133">4</Head>
+   <Head X="12" Y="3" Fixture="134">3</Head>
+   <Head X="13" Y="3" Fixture="135">4</Head>
+   <Head X="14" Y="3" Fixture="136">3</Head>
+   <Head X="15" Y="3" Fixture="137">4</Head>
+   <Head X="16" Y="3" Fixture="138">3</Head>
+   <Head X="17" Y="3" Fixture="139">4</Head>
+   <Head X="18" Y="3" Fixture="140">3</Head>
+   <Head X="19" Y="3" Fixture="141">4</Head>
+   <Head X="20" Y="3" Fixture="142">3</Head>
+   <Head X="0" Y="4" Fixture="122">4</Head>
+   <Head X="1" Y="4" Fixture="123">3</Head>
+   <Head X="2" Y="4" Fixture="124">4</Head>
+   <Head X="3" Y="4" Fixture="125">3</Head>
+   <Head X="4" Y="4" Fixture="126">4</Head>
+   <Head X="5" Y="4" Fixture="127">3</Head>
+   <Head X="6" Y="4" Fixture="128">4</Head>
+   <Head X="7" Y="4" Fixture="129">3</Head>
+   <Head X="8" Y="4" Fixture="130">4</Head>
+   <Head X="9" Y="4" Fixture="131">3</Head>
+   <Head X="10" Y="4" Fixture="132">4</Head>
+   <Head X="11" Y="4" Fixture="133">3</Head>
+   <Head X="12" Y="4" Fixture="134">4</Head>
+   <Head X="13" Y="4" Fixture="135">3</Head>
+   <Head X="14" Y="4" Fixture="136">4</Head>
+   <Head X="15" Y="4" Fixture="137">3</Head>
+   <Head X="16" Y="4" Fixture="138">4</Head>
+   <Head X="17" Y="4" Fixture="139">3</Head>
+   <Head X="18" Y="4" Fixture="140">4</Head>
+   <Head X="19" Y="4" Fixture="141">3</Head>
+   <Head X="20" Y="4" Fixture="142">4</Head>
+   <Head X="0" Y="5" Fixture="122">5</Head>
+   <Head X="1" Y="5" Fixture="123">2</Head>
+   <Head X="2" Y="5" Fixture="124">5</Head>
+   <Head X="3" Y="5" Fixture="125">2</Head>
+   <Head X="4" Y="5" Fixture="126">5</Head>
+   <Head X="5" Y="5" Fixture="127">2</Head>
+   <Head X="6" Y="5" Fixture="128">5</Head>
+   <Head X="7" Y="5" Fixture="129">2</Head>
+   <Head X="8" Y="5" Fixture="130">5</Head>
+   <Head X="9" Y="5" Fixture="131">2</Head>
+   <Head X="10" Y="5" Fixture="132">5</Head>
+   <Head X="11" Y="5" Fixture="133">2</Head>
+   <Head X="12" Y="5" Fixture="134">5</Head>
+   <Head X="13" Y="5" Fixture="135">2</Head>
+   <Head X="14" Y="5" Fixture="136">5</Head>
+   <Head X="15" Y="5" Fixture="137">2</Head>
+   <Head X="16" Y="5" Fixture="138">5</Head>
+   <Head X="17" Y="5" Fixture="139">2</Head>
+   <Head X="18" Y="5" Fixture="140">5</Head>
+   <Head X="19" Y="5" Fixture="141">2</Head>
+   <Head X="20" Y="5" Fixture="142">5</Head>
+   <Head X="0" Y="6" Fixture="122">6</Head>
+   <Head X="1" Y="6" Fixture="123">1</Head>
+   <Head X="2" Y="6" Fixture="124">6</Head>
+   <Head X="3" Y="6" Fixture="125">1</Head>
+   <Head X="4" Y="6" Fixture="126">6</Head>
+   <Head X="5" Y="6" Fixture="127">1</Head>
+   <Head X="6" Y="6" Fixture="128">6</Head>
+   <Head X="7" Y="6" Fixture="129">1</Head>
+   <Head X="8" Y="6" Fixture="130">6</Head>
+   <Head X="9" Y="6" Fixture="131">1</Head>
+   <Head X="10" Y="6" Fixture="132">6</Head>
+   <Head X="11" Y="6" Fixture="133">1</Head>
+   <Head X="12" Y="6" Fixture="134">6</Head>
+   <Head X="13" Y="6" Fixture="135">1</Head>
+   <Head X="14" Y="6" Fixture="136">6</Head>
+   <Head X="15" Y="6" Fixture="137">1</Head>
+   <Head X="16" Y="6" Fixture="138">6</Head>
+   <Head X="17" Y="6" Fixture="139">1</Head>
+   <Head X="18" Y="6" Fixture="140">6</Head>
+   <Head X="19" Y="6" Fixture="141">1</Head>
+   <Head X="20" Y="6" Fixture="142">6</Head>
+   <Head X="0" Y="7" Fixture="122">7</Head>
+   <Head X="1" Y="7" Fixture="123">0</Head>
+   <Head X="2" Y="7" Fixture="124">7</Head>
+   <Head X="3" Y="7" Fixture="125">0</Head>
+   <Head X="4" Y="7" Fixture="126">7</Head>
+   <Head X="5" Y="7" Fixture="127">0</Head>
+   <Head X="6" Y="7" Fixture="128">7</Head>
+   <Head X="7" Y="7" Fixture="129">0</Head>
+   <Head X="8" Y="7" Fixture="130">7</Head>
+   <Head X="9" Y="7" Fixture="131">0</Head>
+   <Head X="10" Y="7" Fixture="132">7</Head>
+   <Head X="11" Y="7" Fixture="133">0</Head>
+   <Head X="12" Y="7" Fixture="134">7</Head>
+   <Head X="13" Y="7" Fixture="135">0</Head>
+   <Head X="14" Y="7" Fixture="136">7</Head>
+   <Head X="15" Y="7" Fixture="137">0</Head>
+   <Head X="16" Y="7" Fixture="138">7</Head>
+   <Head X="17" Y="7" Fixture="139">0</Head>
+   <Head X="18" Y="7" Fixture="140">7</Head>
+   <Head X="19" Y="7" Fixture="141">0</Head>
+   <Head X="20" Y="7" Fixture="142">7</Head>
   </FixtureGroup>
   <ChannelsGroup ID="0" Name="All Red" Value="0">0,1,4,0,6,1,7,1,8,1,9,1,10,1,11,0,11,3,11,6,11,9,11,12,11,15,11,18,11,21</ChannelsGroup>
   <ChannelsGroup ID="1" Name="All Blue" Value="0">0,3,4,2,6,3,7,3,8,3,9,3,10,3,11,2,11,5,11,8,11,11,11,14,11,17,11,20,11,23</ChannelsGroup>
@@ -3264,7 +3364,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -3468,8 +3568,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
@@ -3502,7 +3602,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -3561,7 +3661,7 @@
     <StartOffset>280</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -3582,7 +3682,7 @@
    </Axis>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="681"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="457"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -3636,7 +3736,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -3657,7 +3757,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="681"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="457"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
@@ -3751,7 +3851,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -3779,14 +3879,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetNumber" Value="5"/>
    <Property Name="presetSize" Value="2"/>
-   <Property Name="color1Index" Value="Dim Yellow"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetCollision" Value="No"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color1Index" Value="Dim Yellow"/>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetCollision" Value="No"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -3845,7 +3945,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -4976,7 +5076,7 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -5117,7 +5217,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="10896"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7312"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -5153,7 +5253,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -5189,7 +5289,7 @@
     <StartOffset>20</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="10896"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7312"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -6254,9 +6354,9 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Left"/>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="orientation" Value="Vertical"/>
+   <Property Name="direction" Value="Left"/>
    <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="224" Type="Collection" Name="Spot auf Axel 🟢">
@@ -6385,9 +6485,9 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Right"/>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="orientation" Value="Vertical"/>
+   <Property Name="direction" Value="Right"/>
    <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="241" Type="Script" Name="Micstand drop down counter red">
@@ -11615,7 +11715,7 @@
    <FixtureVal ID="5">3,117,7,255</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="TourSpots blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="1362"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="914"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -11628,7 +11728,7 @@
    <FixtureVal ID="5">7,0</FixtureVal>
   </Function>
   <Function ID="265" Type="Chaser" Name="blinking PARs" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="681"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="457"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -12240,14 +12340,56 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="65">0,0</FixtureVal>
   </Function>
-  <Function ID="354" Type="RGBMatrix" Name="Neue RGB Matrix 354">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+  <Function ID="354" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="122">6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="123">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="124">15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="125">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="126">15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="127">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0</FixtureVal>
+   <FixtureVal ID="128">15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="129">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="130">15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="131">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="132">6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="133">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="134">21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="135">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="136">21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="137">0,0,1,0,2,0,9,0,10,0,11,0,12,0,13,0,14,0</FixtureVal>
+   <FixtureVal ID="138">21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="139">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="140">21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="141">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="142">6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,21,0,22,0,23,0</FixtureVal>
+  </Function>
+  <Function ID="355" Type="RGBMatrix" Name="New RGB Matrix 355">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>17</FixtureGroup>
+  </Function>
+  <Function ID="356" Type="Sequence" Name="Timer" BoundScene="354">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:123:0,1,1,1,2,1:124:21,1,22,1,23,1:125:0,1,1,1,2,1:126:21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1:124:21,1,22,1,23,1:125:0,1,1,1,2,1:126:21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:21,1,22,1,23,1:125:0,1,1,1,2,1:126:21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1:126:21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:129:0,1,1,1,2,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:129:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:130:21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="9" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:129:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:130:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:131:0,1,1,1,2,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="10" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:129:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:130:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:131:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
+   <Step Number="11" FadeIn="0" Hold="1000" FadeOut="0" Values="168">122:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:123:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:124:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:125:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:126:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:127:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1:128:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:129:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:130:15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:131:0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1:132:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1:133:0,1,1,1,2,1:134:21,1,22,1,23,1:135:0,1,1,1,2,1:136:21,1,22,1,23,1:137:0,1,1,1,2,1,9,1,10,1,11,1,12,1,13,1,14,1:138:21,1,22,1,23,1:139:0,1,1,1,2,1:140:21,1,22,1,23,1:141:0,1,1,1,2,1:142:6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,21,1,22,1,23,1</Step>
   </Function>
   <Function ID="403" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -12365,7 +12507,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="765" Y="0" Width="310" Height="710"/>
+    <WindowState Visible="True" X="765" Y="0" Width="310" Height="710"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -12374,7 +12516,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="🔄 round'n'round" ID="4" Icon="">
-     <WindowState Visible="False" X="160" Y="560" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="560" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12388,7 +12530,7 @@
      <Input Universe="1" Channel="136"/>
     </Button>
     <Button Caption="🎉 bunt" ID="1" Icon="">
-     <WindowState Visible="False" X="160" Y="485" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="485" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12402,7 +12544,7 @@
      <Input Universe="1" Channel="137"/>
     </Button>
     <Button Caption="🔵 slow blue" ID="6" Icon="">
-     <WindowState Visible="False" X="5" Y="635" Width="75" Height="70"/>
+     <WindowState Visible="True" X="5" Y="635" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12416,7 +12558,7 @@
      <Input Universe="1" Channel="128"/>
     </Button>
     <Button Caption="↕️ up'n'down" ID="7" Icon="">
-     <WindowState Visible="False" X="85" Y="560" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="560" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12430,7 +12572,7 @@
      <Input Universe="1" Channel="131"/>
     </Button>
     <Button Caption="↔️ left'n'right" ID="8" Icon="">
-     <WindowState Visible="False" X="85" Y="485" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="485" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12444,7 +12586,7 @@
      <Input Universe="1" Channel="132"/>
     </Button>
     <Button Caption="🚶walking" ID="9" Icon="">
-     <WindowState Visible="False" X="85" Y="635" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="635" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12458,7 +12600,7 @@
      <Input Universe="1" Channel="130"/>
     </Button>
     <Button Caption="🏊🏻‍ swimming" ID="10" Icon="">
-     <WindowState Visible="False" X="160" Y="635" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="635" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12472,7 +12614,7 @@
      <Input Universe="1" Channel="135"/>
     </Button>
     <Button Caption="✳️Strobe" ID="11" Icon="">
-     <WindowState Visible="False" X="235" Y="485" Width="70" Height="70"/>
+     <WindowState Visible="True" X="235" Y="485" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12487,7 +12629,7 @@
      <Input Universe="1" Channel="160"/>
     </Button>
     <Button Caption="Axel 🟢" ID="12" Icon="">
-     <WindowState Visible="False" X="85" Y="80" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="80" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12501,7 +12643,7 @@
      <Input Universe="1" Channel="149"/>
     </Button>
     <Button Caption="hot" ID="13" Icon="">
-     <WindowState Visible="False" X="85" Y="5" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="5" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12515,7 +12657,7 @@
      <Input Universe="1" Channel="152"/>
     </Button>
     <Button Caption="Chris 🟡" ID="14" Icon="">
-     <WindowState Visible="False" X="160" Y="80" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="80" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12529,7 +12671,7 @@
      <Input Universe="1" Channel="150"/>
     </Button>
     <Button Caption="Tim   ⚪️" ID="15" Icon="">
-     <WindowState Visible="False" X="235" Y="80" Width="70" Height="70"/>
+     <WindowState Visible="True" X="235" Y="80" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12543,7 +12685,7 @@
      <Input Universe="1" Channel="151"/>
     </Button>
     <Button Caption="Pete 🔵" ID="16" Icon="">
-     <WindowState Visible="False" X="10" Y="80" Width="70" Height="70"/>
+     <WindowState Visible="True" X="10" Y="80" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12557,7 +12699,7 @@
      <Input Universe="1" Channel="146"/>
     </Button>
     <Button Caption="🔦 Search-light" ID="17" Icon="">
-     <WindowState Visible="False" X="5" Y="560" Width="75" Height="70"/>
+     <WindowState Visible="True" X="5" Y="560" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12571,7 +12713,7 @@
      <Input Universe="1" Channel="129"/>
     </Button>
     <Button Caption="🔔 Alarm" ID="18" Icon="">
-     <WindowState Visible="False" X="85" Y="335" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="335" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12585,7 +12727,7 @@
      <Input Universe="1" Channel="134"/>
     </Button>
     <Button Caption="🛑" ID="19" Icon="">
-     <WindowState Visible="False" X="160" Y="410" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="410" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12599,7 +12741,7 @@
      <Input Universe="1" Channel="138"/>
     </Button>
     <Button Caption="" ID="28" Icon="">
-     <WindowState Visible="False" X="235" Y="410" Width="70" Height="70"/>
+     <WindowState Visible="True" X="235" Y="410" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12613,7 +12755,7 @@
      <Input Universe="1" Channel="139"/>
     </Button>
     <Button Caption="blind" ID="31" Icon="">
-     <WindowState Visible="False" X="235" Y="560" Width="70" Height="70"/>
+     <WindowState Visible="True" X="235" Y="560" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12628,7 +12770,7 @@
      <Input Universe="1" Channel="158"/>
     </Button>
     <Button Caption="🔆 blinking" ID="20" Icon="">
-     <WindowState Visible="False" X="85" Y="410" Width="70" Height="70"/>
+     <WindowState Visible="True" X="85" Y="410" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12642,7 +12784,7 @@
      <Input Universe="1" Channel="133"/>
     </Button>
     <Button Caption="hot" ID="21" Icon="">
-     <WindowState Visible="False" X="160" Y="5" Width="70" Height="70"/>
+     <WindowState Visible="True" X="160" Y="5" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12656,7 +12798,7 @@
      <Input Universe="1" Channel="153"/>
     </Button>
     <Button Caption="Fog" ID="36" Icon="">
-     <WindowState Visible="False" X="235" Y="635" Width="70" Height="70"/>
+     <WindowState Visible="True" X="235" Y="635" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12671,7 +12813,7 @@
      <Input Universe="1" Channel="159"/>
     </Button>
     <Button Caption="ignite 5" ID="72" Icon="">
-     <WindowState Visible="False" X="5" Y="260" Width="75" Height="70"/>
+     <WindowState Visible="True" X="5" Y="260" Width="75" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12684,7 +12826,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Slider Caption="Haze" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="False" X="5" Y="335" Width="75" Height="220"/>
+     <WindowState Visible="True" X="5" Y="335" Width="75" Height="220"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -12701,6 +12843,34 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
+    <Button Caption="Killing" ID="29" Icon="">
+     <WindowState Visible="True" X="-15" Y="170" Width="325" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="352"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="1" Channel="409"/>
+    </Button>
+    <Button Caption="Along" ID="73" Icon="">
+     <WindowState Visible="True" X="115" Y="265" Width="145" Height="70"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4291348735</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="405"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="1" Channel="384"/>
+    </Button>
    </SoloFrame>
    <SoloFrame Caption="The Pact" ID="2">
     <Appearance>
@@ -12710,15 +12880,15 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="0" Width="760" Height="710"/>
+    <WindowState Visible="True" X="0" Y="0" Width="760" Height="710"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="0"/>
+    <Disabled>True</Disabled>
+    <Multipage PagesNum="60" CurrentPage="27"/>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="10" Channel="0"/>
      <Key>Shift+%</Key>
@@ -13465,9 +13635,11 @@
      <Chaser>101</Chaser>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
+      <Key>D</Key>
       <Input Universe="10" Channel="2031679"/>
      </Next>
      <Previous>
+      <Key>A</Key>
       <Input Universe="10" Channel="2031678"/>
      </Previous>
      <Playback>
@@ -13948,7 +14120,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue list" ID="30" Page="27">
-     <WindowState Visible="False" X="0" Y="40" Width="760" Height="665"/>
+     <WindowState Visible="True" X="0" Y="40" Width="760" Height="665"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -13973,7 +14145,7 @@
     </CueList>
    </SoloFrame>
    <SpeedDial Caption="Dauer" ID="0">
-    <WindowState Visible="False" X="1080" Y="305" Width="140" Height="115"/>
+    <WindowState Visible="True" X="10" Y="715" Width="140" Height="115"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -13987,7 +14159,7 @@
      <Input Universe="1" Channel="255"/>
     </Tap>
     <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>681</Time>
+    <Time>457</Time>
     <Function FadeIn="0" FadeOut="0" Duration="10">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">52</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
@@ -14016,7 +14188,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="1230" Y="0" Width="680" Height="2125"/>
+    <WindowState Visible="True" X="1100" Y="0" Width="680" Height="1015"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -14025,7 +14197,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Always" ID="55" Icon="">
-     <WindowState Visible="False" X="10" Y="45" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="45" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14039,7 +14211,7 @@
      <Input Universe="1" Channel="384"/>
     </Button>
     <Button Caption="Small things" ID="32" Icon="">
-     <WindowState Visible="False" X="345" Y="495" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="495" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14053,7 +14225,7 @@
      <Input Universe="1" Channel="399"/>
     </Button>
     <Button Caption="Mary" ID="33" Icon="">
-     <WindowState Visible="False" X="20" Y="1415" Width="315" Height="65"/>
+     <WindowState Visible="True" X="345" Y="945" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14065,21 +14237,8 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <Button Caption="Animal" ID="34" Icon="">
-     <WindowState Visible="False" X="15" Y="1500" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="409"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Are you gonna" ID="35" Icon="">
-     <WindowState Visible="False" X="10" Y="345" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="345" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14093,7 +14252,7 @@
      <Input Universe="1" Channel="393"/>
     </Button>
     <Button Caption="Basket Case" ID="37" Icon="">
-     <WindowState Visible="False" X="345" Y="645" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="645" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14107,7 +14266,7 @@
      <Input Universe="1" Channel="405"/>
     </Button>
     <Button Caption="Boys don't cry" ID="38" Icon="">
-     <WindowState Visible="False" X="10" Y="645" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="645" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14120,21 +14279,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="401"/>
     </Button>
-    <Button Caption="Boys cry+summer" ID="39" Icon="">
-     <WindowState Visible="False" X="10" Y="1585" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="268"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Chalsea Dagger" ID="40" Icon="">
-     <WindowState Visible="False" X="345" Y="870" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="870" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14147,34 +14293,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="408"/>
     </Button>
-    <Button Caption="Dancing with myself" ID="41" Icon="">
-     <WindowState Visible="False" X="10" Y="1740" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,12,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="292"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Creep" ID="42" Icon="">
-     <WindowState Visible="False" X="10" Y="1670" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,14,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="290"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Down in the past" ID="43" Icon="">
-     <WindowState Visible="False" X="10" Y="495" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="495" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14187,21 +14307,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="395"/>
     </Button>
-    <Button Caption="Every you" ID="44" Icon="">
-     <WindowState Visible="False" X="10" Y="1810" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="296"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Fight 4U Right" ID="45" Icon="">
-     <WindowState Visible="False" X="345" Y="795" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="795" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14214,34 +14321,8 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="1" Channel="407"/>
     </Button>
-    <Button Caption="Fluorescent" ID="47" Icon="">
-     <WindowState Visible="False" X="10" Y="1950" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="300"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Hail 2 Freaks" ID="48" Icon="">
-     <WindowState Visible="False" X="10" Y="2020" Width="315" Height="65"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Ubuntu Light,20,-1,5,57,0,0,0,0,0</Font>
-     </Appearance>
-     <Function ID="308"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Valerie" ID="56" Icon="">
-     <WindowState Visible="False" X="345" Y="120" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="120" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14255,7 +14336,7 @@
      <Input Universe="1" Channel="385"/>
     </Button>
     <Button Caption="Torn" ID="57" Icon="">
-     <WindowState Visible="False" X="10" Y="195" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="195" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14269,7 +14350,7 @@
      <Input Universe="1" Channel="386"/>
     </Button>
     <Button Caption="Yellow" ID="58" Icon="">
-     <WindowState Visible="False" X="10" Y="270" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="270" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14283,7 +14364,7 @@
      <Input Universe="1" Channel="387"/>
     </Button>
     <Button Caption="Join Me" ID="50" Icon="">
-     <WindowState Visible="False" X="345" Y="45" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="45" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14297,7 +14378,7 @@
      <Input Universe="1" Channel="388"/>
     </Button>
     <Button Caption="Inside" ID="59" Icon="">
-     <WindowState Visible="False" X="10" Y="120" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="120" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14311,7 +14392,7 @@
      <Input Universe="1" Channel="389"/>
     </Button>
     <Button Caption="Run" ID="60" Icon="">
-     <WindowState Visible="False" X="345" Y="195" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="195" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14325,7 +14406,7 @@
      <Input Universe="1" Channel="390"/>
     </Button>
     <Button Caption="Lonely Boy" ID="61" Icon="">
-     <WindowState Visible="False" X="345" Y="270" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="270" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14339,7 +14420,7 @@
      <Input Universe="1" Channel="391"/>
     </Button>
     <Button Caption="The Middle" ID="62" Icon="">
-     <WindowState Visible="False" X="10" Y="420" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="420" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14353,7 +14434,7 @@
      <Input Universe="1" Channel="394"/>
     </Button>
     <Button Caption="Space Lord" ID="63" Icon="">
-     <WindowState Visible="False" X="10" Y="570" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="570" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14367,7 +14448,7 @@
      <Input Universe="1" Channel="396"/>
     </Button>
     <Button Caption="Word up" ID="64" Icon="">
-     <WindowState Visible="False" X="345" Y="345" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="345" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14381,7 +14462,7 @@
      <Input Universe="1" Channel="397"/>
     </Button>
     <Button Caption="Pretender" ID="65" Icon="">
-     <WindowState Visible="False" X="345" Y="420" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="420" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14395,7 +14476,7 @@
      <Input Universe="1" Channel="398"/>
     </Button>
     <Button Caption="Brightside" ID="66" Icon="">
-     <WindowState Visible="False" X="345" Y="570" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="570" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14409,7 +14490,7 @@
      <Input Universe="1" Channel="400"/>
     </Button>
     <Button Caption="Boys of summer" ID="67" Icon="">
-     <WindowState Visible="False" X="10" Y="720" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="720" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14423,7 +14504,7 @@
      <Input Universe="1" Channel="402"/>
     </Button>
     <Button Caption="Narcotic" ID="68" Icon="">
-     <WindowState Visible="False" X="10" Y="795" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="795" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14437,7 +14518,7 @@
      <Input Universe="1" Channel="403"/>
     </Button>
     <Button Caption="Teen Dirtbag" ID="69" Icon="">
-     <WindowState Visible="False" X="10" Y="870" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="870" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14451,7 +14532,7 @@
      <Input Universe="1" Channel="404"/>
     </Button>
     <Button Caption="Song 2" ID="70" Icon="">
-     <WindowState Visible="False" X="345" Y="720" Width="325" Height="65"/>
+     <WindowState Visible="True" X="345" Y="720" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14465,7 +14546,7 @@
      <Input Universe="1" Channel="406"/>
     </Button>
     <Button Caption="Killing" ID="71" Icon="">
-     <WindowState Visible="False" X="10" Y="945" Width="325" Height="65"/>
+     <WindowState Visible="True" X="10" Y="945" Width="325" Height="65"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -14480,7 +14561,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="play/pause" ID="49" Icon="">
-    <WindowState Visible="False" X="1915" Y="745" Width="150" Height="80"/>
+    <WindowState Visible="True" X="1915" Y="745" Width="150" Height="80"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -14494,7 +14575,7 @@
     <Input Universe="1" Channel="171"/>
    </Button>
    <Button Caption="stop" ID="51" Icon="">
-    <WindowState Visible="False" X="2075" Y="745" Width="80" Height="80"/>
+    <WindowState Visible="True" X="2075" Y="745" Width="80" Height="80"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -14508,7 +14589,7 @@
     <Input Universe="1" Channel="170"/>
    </Button>
    <Button Caption="prev" ID="52" Icon="">
-    <WindowState Visible="False" X="2170" Y="745" Width="80" Height="80"/>
+    <WindowState Visible="True" X="2170" Y="745" Width="80" Height="80"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -14522,7 +14603,7 @@
     <Input Universe="1" Channel="172"/>
    </Button>
    <Button Caption="next" ID="53" Icon="">
-    <WindowState Visible="False" X="2260" Y="745" Width="80" Height="80"/>
+    <WindowState Visible="True" X="2260" Y="745" Width="80" Height="80"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -14536,7 +14617,7 @@
     <Input Universe="1" Channel="173"/>
    </Button>
    <Label Caption="iPad Anzeigebereich" ID="26">
-    <WindowState Visible="False" X="950" Y="710" Width="125" Height="20"/>
+    <WindowState Visible="True" X="950" Y="710" Width="125" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
