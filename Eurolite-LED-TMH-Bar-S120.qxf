@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.0</Version>
+  <Author>Christian Prison</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED TMH  Bar S120</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Chaser / Show programs / Sound control">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">No function</Capability>
+  <Capability Min="5" Max="9">Chaser 1</Capability>
+  <Capability Min="10" Max="14">Chaser 2</Capability>
+  <Capability Min="15" Max="19">Chaser 3</Capability>
+  <Capability Min="20" Max="24">Chaser 4</Capability>
+  <Capability Min="25" Max="29">Chaser 5</Capability>
+  <Capability Min="30" Max="34">Chaser 6</Capability>
+  <Capability Min="35" Max="39">Show program 1</Capability>
+  <Capability Min="40" Max="44">Show program 2</Capability>
+  <Capability Min="45" Max="49">Show program 3</Capability>
+  <Capability Min="50" Max="54">Show program 4</Capability>
+  <Capability Min="55" Max="59">Show program 5</Capability>
+  <Capability Min="60" Max="64">Show program 6</Capability>
+  <Capability Min="65" Max="69">Show program 7</Capability>
+  <Capability Min="70" Max="74">Show program 8</Capability>
+  <Capability Min="75" Max="79">Show program 9</Capability>
+  <Capability Min="80" Max="84">Show program 10</Capability>
+  <Capability Min="85" Max="89">Show program 11</Capability>
+  <Capability Min="90" Max="94">Show program 12</Capability>
+  <Capability Min="95" Max="99">Show program 13</Capability>
+  <Capability Min="100" Max="104">Show program 14</Capability>
+  <Capability Min="105" Max="109">Show program 15</Capability>
+  <Capability Min="110" Max="114">Show program 16</Capability>
+  <Capability Min="115" Max="119">Show program 17</Capability>
+  <Capability Min="120" Max="124">Show program 18</Capability>
+  <Capability Min="125" Max="129">Show program 19</Capability>
+  <Capability Min="130" Max="134">Show program 20</Capability>
+  <Capability Min="135" Max="139">Show program 21</Capability>
+  <Capability Min="140" Max="144">Show program 22</Capability>
+  <Capability Min="145" Max="149">Sound control program 1</Capability>
+  <Capability Min="150" Max="154">Sound control program 2</Capability>
+  <Capability Min="155" Max="159">Sound control program 3</Capability>
+  <Capability Min="160" Max="164">Sound control program 4</Capability>
+  <Capability Min="165" Max="169">Sound control program 5</Capability>
+  <Capability Min="170" Max="174">Sound control program 6</Capability>
+  <Capability Min="175" Max="179">Sound control program 7</Capability>
+  <Capability Min="180" Max="184">Sound control program 8</Capability>
+  <Capability Min="185" Max="189">Sound control program 9</Capability>
+  <Capability Min="190" Max="194">Sound control program 10</Capability>
+  <Capability Min="195" Max="199">Sound control program 11</Capability>
+  <Capability Min="200" Max="204">Sound control program 12</Capability>
+  <Capability Min="205" Max="209">Sound control program 13</Capability>
+  <Capability Min="210" Max="214">Sound control program 14</Capability>
+  <Capability Min="215" Max="219">Sound control program 15</Capability>
+  <Capability Min="220" Max="224">Sound control program 16</Capability>
+  <Capability Min="225" Max="229">Sound control program 17</Capability>
+  <Capability Min="230" Max="234">Sound control program 18</Capability>
+  <Capability Min="235" Max="239">Sound control program 19</Capability>
+  <Capability Min="240" Max="244">Sound control program 20</Capability>
+  <Capability Min="245" Max="249">Sound control program 21</Capability>
+  <Capability Min="250" Max="255">Sound control program 22</Capability>
+ </Channel>
+ <Channel Name="Speed Chaser + show programs / Sound control">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="FastToSlow">Speed chaser + show programs decreasing // Decreasing microphone sensitivity</Capability>
+ </Channel>
+ <Channel Name="PAN/TILT speed Chaser + Motion macros // Sound control" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Color wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">White</Capability>
+  <Capability Min="10" Max="19">Red</Capability>
+  <Capability Min="20" Max="29">Green</Capability>
+  <Capability Min="30" Max="39">Blue</Capability>
+  <Capability Min="40" Max="49">Yellow</Capability>
+  <Capability Min="50" Max="59">Light blue</Capability>
+  <Capability Min="60" Max="69">Orange</Capability>
+  <Capability Min="70" Max="79">Purple</Capability>
+  <Capability Min="80" Max="89">Purple  + Orange</Capability>
+  <Capability Min="90" Max="99">Orange + Light blue</Capability>
+  <Capability Min="100" Max="109">Light blue + yellow</Capability>
+  <Capability Min="110" Max="119">Yellow + Blue</Capability>
+  <Capability Min="120" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="139">Green + Red</Capability>
+  <Capability Min="140" Max="149">Red + White</Capability>
+  <Capability Min="150" Max="255">Rainbow effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">No function (open)</Capability>
+  <Capability Min="10" Max="19">Gobo 1 (Ring)</Capability>
+  <Capability Min="20" Max="29">Gobo 2 (concentric ellipses)</Capability>
+  <Capability Min="30" Max="39">Gobo 3 (concentric dots)</Capability>
+  <Capability Min="40" Max="49">Gobo 4 (square pattern)</Capability>
+  <Capability Min="50" Max="59">Gobo 5 (random dots)</Capability>
+  <Capability Min="60" Max="69">Gobo 6 (4 boomerang)</Capability>
+  <Capability Min="70" Max="79">Gobo 7 (ice)</Capability>
+  <Capability Min="80" Max="89">Gobo 7 shaking with decreasing speed</Capability>
+  <Capability Min="90" Max="99">Gobo 6 shaking with decreasing speed</Capability>
+  <Capability Min="100" Max="109">Gobo 5 shaking with decreasing speed</Capability>
+  <Capability Min="110" Max="119">Gobo 4 shaking with decreasing speed</Capability>
+  <Capability Min="120" Max="129">Gobo 3 shaking with decreasing speed</Capability>
+  <Capability Min="130" Max="139">Gobo 2 shaking with decreasing speed</Capability>
+  <Capability Min="140" Max="149">Gobo 1 shaking with decreasing speed</Capability>
+  <Capability Min="150" Max="255">Gobo changes with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">No function</Capability>
+  <Capability Min="11" Max="255">Strobe effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="PAN" Preset="PositionPan"/>
+ <Channel Name="TILT" Preset="PositionTilt"/>
+ <Channel Name="PAN/TILT speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="PAN fine adjustment" Preset="PositionPanFine"/>
+ <Channel Name="TILT fine adjustment" Preset="PositionTiltFine"/>
+ <Channel Name="Pan Head  1" Preset="PositionPan"/>
+ <Channel Name="Pan Head  2" Preset="PositionPan"/>
+ <Channel Name="Pan Head  3" Preset="PositionPan"/>
+ <Channel Name="Pan Head  4" Preset="PositionPan"/>
+ <Channel Name="PAN fine Head 1" Preset="PositionPanFine"/>
+ <Channel Name="PAN fine Head 2" Preset="PositionPanFine"/>
+ <Channel Name="PAN fine Head 3" Preset="PositionPanFine"/>
+ <Channel Name="PAN fine Head 4" Preset="PositionPanFine"/>
+ <Channel Name="TILT Head  1" Preset="PositionTilt"/>
+ <Channel Name="TILT Head  2" Preset="PositionTilt"/>
+ <Channel Name="TILT Head  3" Preset="PositionTilt"/>
+ <Channel Name="TILT Head  4" Preset="PositionTilt"/>
+ <Channel Name="TILT fine Head  1" Preset="PositionTiltFine"/>
+ <Channel Name="TILT fine Head  2" Preset="PositionTiltFine"/>
+ <Channel Name="TILT fine Head  3" Preset="PositionTiltFine"/>
+ <Channel Name="TILT fine Head  4" Preset="PositionTiltFine"/>
+ <Channel Name="Master dimmer Head 1" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Master dimmer Head 2" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Master dimmer Head 3" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Master dimmer Head 4" Preset="IntensityMasterDimmer"/>
+ <Channel Name="PAN/TILT speed Head 1" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="PAN/TILT speed Head 2" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="PAN/TILT speed Head 3" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="PAN/TILT speed Head 4" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Strobe Head 1">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">No function</Capability>
+  <Capability Min="11" Max="255">Strobe effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Strobe Head 2">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">No function</Capability>
+  <Capability Min="11" Max="255">Strobe effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Strobe Head 3">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">No function</Capability>
+  <Capability Min="11" Max="255">Strobe effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Strobe Head 4">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">No function</Capability>
+  <Capability Min="11" Max="255">Strobe effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Color wheel Head 1">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">White</Capability>
+  <Capability Min="10" Max="19">Red</Capability>
+  <Capability Min="20" Max="29">Green</Capability>
+  <Capability Min="30" Max="39">Blue</Capability>
+  <Capability Min="40" Max="49">Yellow</Capability>
+  <Capability Min="50" Max="59">Light blue</Capability>
+  <Capability Min="60" Max="69">Orange</Capability>
+  <Capability Min="70" Max="79">Purple</Capability>
+  <Capability Min="80" Max="89">Purple  + Orange</Capability>
+  <Capability Min="90" Max="99">Orange + Light blue</Capability>
+  <Capability Min="100" Max="109">Light blue + yellow</Capability>
+  <Capability Min="110" Max="119">Yellow + Blue</Capability>
+  <Capability Min="120" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="139">Green + Red</Capability>
+  <Capability Min="140" Max="149">Red + White</Capability>
+  <Capability Min="150" Max="255">Rainbow effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Color wheel Head 2">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">White</Capability>
+  <Capability Min="10" Max="19">Red</Capability>
+  <Capability Min="20" Max="29">Green</Capability>
+  <Capability Min="30" Max="39">Blue</Capability>
+  <Capability Min="40" Max="49">Yellow</Capability>
+  <Capability Min="50" Max="59">Light blue</Capability>
+  <Capability Min="60" Max="69">Orange</Capability>
+  <Capability Min="70" Max="79">Purple</Capability>
+  <Capability Min="80" Max="89">Purple  + Orange</Capability>
+  <Capability Min="90" Max="99">Orange + Light blue</Capability>
+  <Capability Min="100" Max="109">Light blue + yellow</Capability>
+  <Capability Min="110" Max="119">Yellow + Blue</Capability>
+  <Capability Min="120" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="139">Green + Red</Capability>
+  <Capability Min="140" Max="149">Red + White</Capability>
+  <Capability Min="150" Max="255">Rainbow effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Color wheel Head 3">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">White</Capability>
+  <Capability Min="10" Max="19">Red</Capability>
+  <Capability Min="20" Max="29">Green</Capability>
+  <Capability Min="30" Max="39">Blue</Capability>
+  <Capability Min="40" Max="49">Yellow</Capability>
+  <Capability Min="50" Max="59">Light blue</Capability>
+  <Capability Min="60" Max="69">Orange</Capability>
+  <Capability Min="70" Max="79">Purple</Capability>
+  <Capability Min="80" Max="89">Purple  + Orange</Capability>
+  <Capability Min="90" Max="99">Orange + Light blue</Capability>
+  <Capability Min="100" Max="109">Light blue + yellow</Capability>
+  <Capability Min="110" Max="119">Yellow + Blue</Capability>
+  <Capability Min="120" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="139">Green + Red</Capability>
+  <Capability Min="140" Max="149">Red + White</Capability>
+  <Capability Min="150" Max="255">Rainbow effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Color wheel Head 4">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">White</Capability>
+  <Capability Min="10" Max="19">Red</Capability>
+  <Capability Min="20" Max="29">Green</Capability>
+  <Capability Min="30" Max="39">Blue</Capability>
+  <Capability Min="40" Max="49">Yellow</Capability>
+  <Capability Min="50" Max="59">Light blue</Capability>
+  <Capability Min="60" Max="69">Orange</Capability>
+  <Capability Min="70" Max="79">Purple</Capability>
+  <Capability Min="80" Max="89">Purple  + Orange</Capability>
+  <Capability Min="90" Max="99">Orange + Light blue</Capability>
+  <Capability Min="100" Max="109">Light blue + yellow</Capability>
+  <Capability Min="110" Max="119">Yellow + Blue</Capability>
+  <Capability Min="120" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="139">Green + Red</Capability>
+  <Capability Min="140" Max="149">Red + White</Capability>
+  <Capability Min="150" Max="255">Rainbow effect with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel Head 1">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">No function (open)</Capability>
+  <Capability Min="10" Max="19">Gobo 1 (Ring)</Capability>
+  <Capability Min="20" Max="29">Gobo 2 (concentric ellipses)</Capability>
+  <Capability Min="30" Max="39">Gobo 3 (concentric dots)</Capability>
+  <Capability Min="40" Max="49">Gobo 4 (square pattern)</Capability>
+  <Capability Min="50" Max="59">Gobo 5 (random dots)</Capability>
+  <Capability Min="60" Max="69">Gobo 6 (4 boomerang)</Capability>
+  <Capability Min="70" Max="79">Gobo 7 (ice)</Capability>
+  <Capability Min="80" Max="89">Gobo 7 shaking with decreasing speed</Capability>
+  <Capability Min="90" Max="99">Gobo 6 shaking with decreasing speed</Capability>
+  <Capability Min="100" Max="109">Gobo 5 shaking with decreasing speed</Capability>
+  <Capability Min="110" Max="119">Gobo 4 shaking with decreasing speed</Capability>
+  <Capability Min="120" Max="129">Gobo 3 shaking with decreasing speed</Capability>
+  <Capability Min="130" Max="139">Gobo 2 shaking with decreasing speed</Capability>
+  <Capability Min="140" Max="149">Gobo 1 shaking with decreasing speed</Capability>
+  <Capability Min="150" Max="255">Gobo changes with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel Head 2">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">No function (open)</Capability>
+  <Capability Min="10" Max="19">Gobo 1 (Ring)</Capability>
+  <Capability Min="20" Max="29">Gobo 2 (concentric ellipses)</Capability>
+  <Capability Min="30" Max="39">Gobo 3 (concentric dots)</Capability>
+  <Capability Min="40" Max="49">Gobo 4 (square pattern)</Capability>
+  <Capability Min="50" Max="59">Gobo 5 (random dots)</Capability>
+  <Capability Min="60" Max="69">Gobo 6 (4 boomerang)</Capability>
+  <Capability Min="70" Max="79">Gobo 7 (ice)</Capability>
+  <Capability Min="80" Max="89">Gobo 7 shaking with decreasing speed</Capability>
+  <Capability Min="90" Max="99">Gobo 6 shaking with decreasing speed</Capability>
+  <Capability Min="100" Max="109">Gobo 5 shaking with decreasing speed</Capability>
+  <Capability Min="110" Max="119">Gobo 4 shaking with decreasing speed</Capability>
+  <Capability Min="120" Max="129">Gobo 3 shaking with decreasing speed</Capability>
+  <Capability Min="130" Max="139">Gobo 2 shaking with decreasing speed</Capability>
+  <Capability Min="140" Max="149">Gobo 1 shaking with decreasing speed</Capability>
+  <Capability Min="150" Max="255">Gobo changes with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel Head 3">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">No function (open)</Capability>
+  <Capability Min="10" Max="19">Gobo 1 (Ring)</Capability>
+  <Capability Min="20" Max="29">Gobo 2 (concentric ellipses)</Capability>
+  <Capability Min="30" Max="39">Gobo 3 (concentric dots)</Capability>
+  <Capability Min="40" Max="49">Gobo 4 (square pattern)</Capability>
+  <Capability Min="50" Max="59">Gobo 5 (random dots)</Capability>
+  <Capability Min="60" Max="69">Gobo 6 (4 boomerang)</Capability>
+  <Capability Min="70" Max="79">Gobo 7 (ice)</Capability>
+  <Capability Min="80" Max="89">Gobo 7 shaking with decreasing speed</Capability>
+  <Capability Min="90" Max="99">Gobo 6 shaking with decreasing speed</Capability>
+  <Capability Min="100" Max="109">Gobo 5 shaking with decreasing speed</Capability>
+  <Capability Min="110" Max="119">Gobo 4 shaking with decreasing speed</Capability>
+  <Capability Min="120" Max="129">Gobo 3 shaking with decreasing speed</Capability>
+  <Capability Min="130" Max="139">Gobo 2 shaking with decreasing speed</Capability>
+  <Capability Min="140" Max="149">Gobo 1 shaking with decreasing speed</Capability>
+  <Capability Min="150" Max="255">Gobo changes with increasing speed</Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel Head 4">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">No function (open)</Capability>
+  <Capability Min="10" Max="19">Gobo 1 (Ring)</Capability>
+  <Capability Min="20" Max="29">Gobo 2 (concentric ellipses)</Capability>
+  <Capability Min="30" Max="39">Gobo 3 (concentric dots)</Capability>
+  <Capability Min="40" Max="49">Gobo 4 (square pattern)</Capability>
+  <Capability Min="50" Max="59">Gobo 5 (random dots)</Capability>
+  <Capability Min="60" Max="69">Gobo 6 (4 boomerang)</Capability>
+  <Capability Min="70" Max="79">Gobo 7 (ice)</Capability>
+  <Capability Min="80" Max="89">Gobo 7 shaking with decreasing speed</Capability>
+  <Capability Min="90" Max="99">Gobo 6 shaking with decreasing speed</Capability>
+  <Capability Min="100" Max="109">Gobo 5 shaking with decreasing speed</Capability>
+  <Capability Min="110" Max="119">Gobo 4 shaking with decreasing speed</Capability>
+  <Capability Min="120" Max="129">Gobo 3 shaking with decreasing speed</Capability>
+  <Capability Min="130" Max="139">Gobo 2 shaking with decreasing speed</Capability>
+  <Capability Min="140" Max="149">Gobo 1 shaking with decreasing speed</Capability>
+  <Capability Min="150" Max="255">Gobo changes with increasing speed</Capability>
+ </Channel>
+ <Mode Name="3-channel">
+  <Channel Number="0" ActsOn="2">Master dimmer</Channel>
+  <Channel Number="1">Chaser / Show programs / Sound control</Channel>
+  <Channel Number="2">Speed Chaser + show programs / Sound control</Channel>
+ </Mode>
+ <Mode Name="9-channel">
+  <Channel Number="0" ActsOn="8">PAN</Channel>
+  <Channel Number="1">TILT</Channel>
+  <Channel Number="2">PAN/TILT speed</Channel>
+  <Channel Number="3">Color wheel</Channel>
+  <Channel Number="4">Gobo Wheel</Channel>
+  <Channel Number="5">Strobe</Channel>
+  <Channel Number="6">Master dimmer</Channel>
+  <Channel Number="7">Chaser / Show programs / Sound control</Channel>
+  <Channel Number="8">Speed Chaser + show programs / Sound control</Channel>
+ </Mode>
+ <Mode Name="11-channel">
+  <Channel Number="0" ActsOn="10">PAN</Channel>
+  <Channel Number="1">PAN fine adjustment</Channel>
+  <Channel Number="2">TILT</Channel>
+  <Channel Number="3">TILT fine adjustment</Channel>
+  <Channel Number="4">PAN/TILT speed</Channel>
+  <Channel Number="5">Color wheel</Channel>
+  <Channel Number="6">Gobo Wheel</Channel>
+  <Channel Number="7">Strobe</Channel>
+  <Channel Number="8">Master dimmer</Channel>
+  <Channel Number="9">Chaser / Show programs / Sound control</Channel>
+  <Channel Number="10">Speed Chaser + show programs / Sound control</Channel>
+ </Mode>
+ <Mode Name="38-channel">
+  <Channel Number="0">Pan Head  1</Channel>
+  <Channel Number="1">PAN fine Head 1</Channel>
+  <Channel Number="2">TILT Head  1</Channel>
+  <Channel Number="3">TILT fine Head  1</Channel>
+  <Channel Number="4">PAN/TILT speed Head 1</Channel>
+  <Channel Number="5">Color wheel Head 1</Channel>
+  <Channel Number="6">Gobo Wheel Head 1</Channel>
+  <Channel Number="7">Strobe Head 1</Channel>
+  <Channel Number="8">Master dimmer Head 1</Channel>
+  <Channel Number="9">Pan Head  2</Channel>
+  <Channel Number="10">PAN fine Head 2</Channel>
+  <Channel Number="11">TILT Head  2</Channel>
+  <Channel Number="12">TILT fine Head  2</Channel>
+  <Channel Number="13">PAN/TILT speed Head 2</Channel>
+  <Channel Number="14">Color wheel Head 2</Channel>
+  <Channel Number="15">Gobo Wheel Head 2</Channel>
+  <Channel Number="16">Strobe Head 2</Channel>
+  <Channel Number="17">Master dimmer Head 2</Channel>
+  <Channel Number="18">Pan Head  3</Channel>
+  <Channel Number="19">PAN fine Head 3</Channel>
+  <Channel Number="20">TILT Head  3</Channel>
+  <Channel Number="21">TILT fine Head  3</Channel>
+  <Channel Number="22">PAN/TILT speed Head 3</Channel>
+  <Channel Number="23">Color wheel Head 3</Channel>
+  <Channel Number="24">Gobo Wheel Head 3</Channel>
+  <Channel Number="25">Strobe Head 3</Channel>
+  <Channel Number="26">Master dimmer Head 3</Channel>
+  <Channel Number="27">Pan Head  4</Channel>
+  <Channel Number="28">PAN fine Head 4</Channel>
+  <Channel Number="29">TILT Head  4</Channel>
+  <Channel Number="30">TILT fine Head  4</Channel>
+  <Channel Number="31">PAN/TILT speed Head 4</Channel>
+  <Channel Number="32">Color wheel Head 4</Channel>
+  <Channel Number="33">Gobo Wheel Head 4</Channel>
+  <Channel Number="34">Strobe Head 4</Channel>
+  <Channel Number="35">Master dimmer Head 4</Channel>
+  <Channel Number="36">Chaser / Show programs / Sound control</Channel>
+  <Channel Number="37">Speed Chaser + show programs / Sound control</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+  </Head>
+  <Head>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+   <Channel>26</Channel>
+  </Head>
+  <Head>
+   <Channel>27</Channel>
+   <Channel>28</Channel>
+   <Channel>29</Channel>
+   <Channel>30</Channel>
+   <Channel>31</Channel>
+   <Channel>32</Channel>
+   <Channel>33</Channel>
+   <Channel>34</Channel>
+   <Channel>35</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="5-channel">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Chaser / Show programs / Sound control</Channel>
+  <Channel Number="2">PAN/TILT speed Chaser + Motion macros // Sound control</Channel>
+  <Channel Number="3">Color wheel</Channel>
+  <Channel Number="4">Gobo Wheel</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="8899" ColourTemperature="7300"/>
+  <Dimensions Weight="13.5" Width="1000" Height="280" Depth="175"/>
+  <Lens Name="Other" DegreesMin="13" DegreesMax="13"/>
+  <Focus Type="Head" PanMax="540" TiltMax="180"/>
+  <Layout Width="4" Height="1"/>
+  <Technical PowerConsumption="120" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
