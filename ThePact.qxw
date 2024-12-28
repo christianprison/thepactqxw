@@ -2562,9 +2562,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
+   <Property Name="blockSize" Value="2"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="blockSize" Value="2"/>
   </Function>
   <Function ID="52" Type="EFX" Name="walking Martins (not used)">
    <Fixture>
@@ -2873,14 +2873,14 @@
    <MonoColor>4294967167</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
+   <Property Name="color4Index" Value="Blue"/>
    <Property Name="color2Index" Value="Dim Orange"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetCollision" Value="No"/>
    <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetSize" Value="2"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
    <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetCollision" Value="No"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color5Index" Value="Orange"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -3074,6 +3074,7 @@
    <Step Number="2">140</Step>
    <Step Number="3">203</Step>
    <Step Number="4">262</Step>
+   <Step Number="5">364</Step>
   </Function>
   <Function ID="75" Type="Collection" Name="04 up'n'down ↕">
    <Step Number="0">53</Step>
@@ -3083,6 +3084,7 @@
    <Step Number="4">203</Step>
    <Step Number="5">198</Step>
    <Step Number="6">222</Step>
+   <Step Number="7">367</Step>
   </Function>
   <Function ID="76" Type="Collection" Name="05 left'n'right ↔️ ">
    <Step Number="0">58</Step>
@@ -3092,11 +3094,13 @@
    <Step Number="4">203</Step>
    <Step Number="5">220</Step>
    <Step Number="6">222</Step>
+   <Step Number="7">366</Step>
   </Function>
   <Function ID="77" Type="Collection" Name="06 blinking 🔆">
    <Step Number="0">263</Step>
    <Step Number="1">265</Step>
    <Step Number="2">222</Step>
+   <Step Number="3">368</Step>
   </Function>
   <Function ID="78" Type="Collection" Name="07 round'n'round 🔄">
    <Step Number="0">62</Step>
@@ -3116,6 +3120,7 @@
    <Step Number="3">198</Step>
    <Step Number="4">203</Step>
    <Step Number="5">222</Step>
+   <Step Number="6">365</Step>
   </Function>
   <Function ID="80" Type="Collection" Name="09 Alarm 🔔">
    <Step Number="0">279</Step>
@@ -5352,10 +5357,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Left"/>
    <Property Name="orientation" Value="Vertical"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="50"/>
+   <Property Name="direction" Value="Left"/>
   </Function>
   <Function ID="224" Type="Collection" Name="Spot auf Axel 🟢">
    <Step Number="0">6</Step>
@@ -5379,12 +5384,14 @@
    <Step Number="2">170</Step>
    <Step Number="3">203</Step>
    <Step Number="4">234</Step>
+   <Step Number="5">362</Step>
   </Function>
   <Function ID="228" Type="Collection" Name="Spot auf Pete 🔵">
    <Step Number="0">86</Step>
    <Step Number="1">203</Step>
    <Step Number="2">232</Step>
    <Step Number="3">184</Step>
+   <Step Number="4">363</Step>
   </Function>
   <Function ID="229" Type="Collection" Name="Spot auf Tim ⚪️">
    <Step Number="0">168</Step>
@@ -5483,10 +5490,10 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="direction" Value="Right"/>
    <Property Name="orientation" Value="Vertical"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="20"/>
+   <Property Name="direction" Value="Right"/>
   </Function>
   <Function ID="241" Type="Script" Name="Micstand drop down counter red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -10597,6 +10604,8 @@
    <Step Number="4">223</Step>
    <Step Number="5">250</Step>
    <Step Number="6">251</Step>
+   <Step Number="7">361</Step>
+   <Step Number="8">371</Step>
   </Function>
   <Function ID="250" Type="Scene" Name="TourSpots yellow" Path="Colors Heads">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -11397,6 +11406,326 @@
   <Function ID="361" Type="Scene" Name="Backheads musikgesteuertes Bewegungsmakro 14 (round'n'round)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="28">36,210,37,128</FixtureVal>
+  </Function>
+  <Function ID="362" Type="EFX" Name="spot auf Bibo">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>8</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="363" Type="EFX" Name="spot auf Pete">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>60</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>8</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="364" Type="EFX" Name="walking TMHs">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>18</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>36</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>54</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>32</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>0</Frequency>
+    <Phase>9</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>10</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="365" Type="EFX" Name="swimming TMHs">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>10</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>20</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>30</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>32</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>0</Frequency>
+    <Phase>22</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>4</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="366" Type="EFX" Name="left and right TMHs">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="1040"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>16</Width>
+   <Height>33</Height>
+   <Rotation>64</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>110</Offset>
+    <Frequency>9</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>60</Offset>
+    <Frequency>1</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="367" Type="EFX" Name="up and down TMHs">
+   <Fixture>
+    <ID>28</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>1</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>2</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>28</ID>
+    <Head>3</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="1040"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>0</Width>
+   <Height>80</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>110</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>40</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="368" Type="Chaser" Name="TMHs blinking" Path="ZZZ Other">
+   <Speed FadeIn="0" FadeOut="0" Duration="1040"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1040" FadeOut="0">369</Step>
+   <Step Number="1" FadeIn="0" Hold="1040" FadeOut="0">370</Step>
+  </Function>
+  <Function ID="369" Type="Scene" Name="TMHs rainbow" Path="Colors Heads">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="28">5,212,8,255,17,255,26,255,35,255</FixtureVal>
+  </Function>
+  <Function ID="370" Type="Scene" Name="TMHs off" Path="Colors Heads">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="28">8,0,17,0,26,0,35,0</FixtureVal>
+  </Function>
+  <Function ID="371" Type="Scene" Name="TMHs yellow" Path="Colors Heads">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="28">5,42,14,44,23,45,32,44</FixtureVal>
   </Function>
   <Function ID="403" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -13127,7 +13456,7 @@
      <Stop/>
     </CueList>
     <CueList Caption="Cue list" ID="30" Page="27">
-     <WindowState Visible="False" X="0" Y="40" Width="755" Height="665"/>
+     <WindowState Visible="False" X="5" Y="45" Width="755" Height="665"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
