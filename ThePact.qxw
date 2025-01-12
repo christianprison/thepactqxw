@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
@@ -18,7 +18,7 @@
     <Input Plugin="MIDI" UID="None" Line="1" Profile="Generic MIDI"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.105" outputUni="0"/>
     </Output>
    </Universe>
@@ -37,47 +37,47 @@
     <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
    </Universe>
    <Universe Name="DisplayLEDs 1 (out)" ID="11">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputUni="1"/>
     </Output>
    </Universe>
    <Universe Name="Stange (out)" ID="12">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="8"/>
     </Output>
    </Universe>
    <Universe Name="Universe 14" ID="13">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="9"/>
     </Output>
    </Universe>
    <Universe Name="Universe 15" ID="14">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="10"/>
     </Output>
    </Universe>
    <Universe Name="Universe 16" ID="15">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="11"/>
     </Output>
    </Universe>
    <Universe Name="Universe 17" ID="16">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="12"/>
     </Output>
    </Universe>
    <Universe Name="Universe 18" ID="17">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="13"/>
     </Output>
    </Universe>
    <Universe Name="Universe 19" ID="18">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="14"/>
     </Output>
    </Universe>
    <Universe Name="Universe 20" ID="19">
-    <Output Plugin="ArtNet" UID="192.168.0.109" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.2.35" Line="1">
      <PluginParameters outputIP="192.168.0.102" outputUni="15"/>
     </Output>
    </Universe>
@@ -3014,12 +3014,12 @@
    <FixtureGroup>3</FixtureGroup>
    <Property Name="presetCollision" Value="No"/>
    <Property Name="color1Index" Value="Dim Yellow"/>
+   <Property Name="color3Index" Value="Green"/>
    <Property Name="presetNumber" Value="5"/>
    <Property Name="color2Index" Value="Dim Orange"/>
    <Property Name="color5Index" Value="Orange"/>
-   <Property Name="presetSize" Value="2"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="2"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="Always where I need to be" Path="Pact Songs">
    <Speed FadeIn="0" FadeOut="0" Duration="11000"/>
@@ -5344,8 +5344,8 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="direction" Value="Left"/>
+   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="orientation" Value="Vertical"/>
   </Function>
@@ -5475,8 +5475,8 @@
    <EndColor>4294901760</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>13</FixtureGroup>
-   <Property Name="taillength" Value="20"/>
    <Property Name="direction" Value="Right"/>
+   <Property Name="taillength" Value="20"/>
    <Property Name="tailfade" Value="Yes"/>
    <Property Name="orientation" Value="Vertical"/>
   </Function>
@@ -11610,6 +11610,40 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>12</FixtureGroup>
   </Function>
+  <Function ID="375" Type="RGBMatrix" Name="New RGB Matrix 375">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>4294967295</FixtureGroup>
+  </Function>
+  <Function ID="376" Type="Collection" Name="New Collection 376"/>
+  <Function ID="377" Type="Scene" Name="New Scene 377">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,210,1,218,2,75,3,188</FixtureVal>
+  </Function>
+  <Function ID="378" Type="Scene" Name="TourSpots facing">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,109,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+   <FixtureVal ID="5">0,182,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="379" Type="Scene" Name="TourSpots front">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,145,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+   <FixtureVal ID="5">0,146,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="380" Type="Scene" Name="TourSpots back">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,73,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+   <FixtureVal ID="5">0,219,1,237,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+  </Function>
+  <Function ID="381" Type="Scene" Name="TourSpots facing up">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,109,1,128,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+   <FixtureVal ID="5">0,182,1,128,2,135,3,0,4,0,5,0,6,32,7,255,8,134,9,0,10,0</FixtureVal>
+  </Function>
   <Function ID="403" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="38">0,0</FixtureVal>
@@ -12107,7 +12141,7 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="60" CurrentPage="27"/>
+    <Multipage PagesNum="60" CurrentPage="52"/>
     <Shortcut Page="0" Name="All the small things">
      <Input Universe="10" Channel="0"/>
      <Key>Shift+%</Key>
