@@ -10,33 +10,43 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: 22a9695)" Line="0">
-     <PluginParameters UniverseChannels="273"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Input" ID="1">
     <Input Plugin="MIDI" UID="None" Line="1" Profile="Generic MIDI"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="None" Line="2"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1"/>
    </Universe>
    <Universe Name="Säule1.1 (out)" ID="3">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
    <Universe Name="Säule1.2 (out)" ID="4">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
    <Universe Name="Säule1.3 (out)" ID="5">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
    <Universe Name="Säule1.4 (out)" ID="6">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
    <Universe Name="Säule1.5 (out)" ID="7">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
    <Universe Name="Säule1.6 (out)" ID="8">
-    <Output Plugin="ArtNet" UID="192.168.0.1" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.178.174" Line="1">
+     <PluginParameters outputIP="192.168.0.10"/>
+    </Output>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -11411,7 +11421,7 @@
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="Sequence" Name="TMHs walking" BoundScene="0">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -11432,12 +11442,12 @@
    <FixtureVal ID="2">5,74,8,255,14,25,17,255,23,35,26,255,32,65,35,255</FixtureVal>
   </Function>
   <Function ID="54" Type="Scene" Name="TMHs reset">
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <FixtureVal ID="28">37,231</FixtureVal>
    <FixtureVal ID="2">37,231</FixtureVal>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -11491,7 +11501,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -11512,7 +11522,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
@@ -11549,7 +11559,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -11614,7 +11624,7 @@
    <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0" Note="ALWAYS WHERE I NEED TO BE">82</Step>
   </Function>
   <Function ID="65" Type="Sequence" Name="TMHs swimming" BoundScene="115">
-   <Speed FadeIn="0" FadeOut="0" Duration="19"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="31"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -11734,7 +11744,7 @@
    <Step Number="7" FadeIn="0" Hold="3000" FadeOut="0">229</Step>
    <Step Number="8" FadeIn="0" Hold="3000" FadeOut="0" Note="Verse 3">228</Step>
    <Step Number="9" FadeIn="0" Hold="21000" FadeOut="0">78</Step>
-   <Step Number="10" FadeIn="0" Hold="12000" FadeOut="0">77</Step>
+   <Step Number="10" FadeIn="0" Hold="12000" FadeOut="0" Note="Chorus 3">77</Step>
    <Step Number="11" FadeIn="0" Hold="11000" FadeOut="0">80</Step>
    <Step Number="12" FadeIn="0" Hold="7000" FadeOut="0">71</Step>
    <Step Number="13" FadeIn="0" Hold="3000" FadeOut="0">36</Step>
@@ -12743,7 +12753,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="126" Type="Scene" Name="New Scene 126" Path="Movement Heads">
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <FixtureVal ID="28"/>
    <FixtureVal ID="2"/>
   </Function>
@@ -12900,7 +12910,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="5008"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8256"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -12936,7 +12946,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -12972,7 +12982,7 @@
     <StartOffset>20</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="5008"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="8256"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -13727,7 +13737,7 @@
    <FixtureVal ID="10">0,0,1,255,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="214" Type="Show" Name="HaSo 24">
-   <TimeDivision Type="Time" BPM="120"/>
+   <TimeDivision Type="BPM_4_4" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
     <ShowFunction ID="56" StartTime="0" Duration="223996" Color="#556b80"/>
     <ShowFunction ID="64" StartTime="269220" Duration="170996" Color="#556b80"/>
@@ -19146,7 +19156,7 @@
    <FixtureVal ID="5">3,117,7,255</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="TourSpots blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -19159,7 +19169,7 @@
    <FixtureVal ID="5">7,0</FixtureVal>
   </Function>
   <Function ID="265" Type="Chaser" Name="blinking PARs" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -19835,7 +19845,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -19913,7 +19923,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -19934,7 +19944,7 @@
    </Axis>
   </Function>
   <Function ID="368" Type="Chaser" Name="TMHs blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -20432,7 +20442,7 @@
     <StartOffset>150</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="626"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1032"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -20463,7 +20473,7 @@
    <FixtureVal ID="2">5,54,8,255,14,54,17,250,23,54,26,255,32,54,35,255,37,0</FixtureVal>
   </Function>
   <Function ID="442" Type="Chaser" Name="TMHs light blue fade on-off" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="313"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="516"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
@@ -20475,7 +20485,7 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">82</Step>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0" Note="BLACK CHANDELIER">82</Step>
    <Step Number="1" FadeIn="0" Hold="8400" FadeOut="0">36</Step>
    <Step Number="2" FadeIn="0" Hold="8400" FadeOut="0" Note="Intro (drip)">70</Step>
    <Step Number="3" FadeIn="0" Hold="34200" FadeOut="0" Note="Verse 1">74</Step>
@@ -21691,7 +21701,7 @@
    <FixtureVal ID="28">36,0,37,0</FixtureVal>
    <FixtureVal ID="2">36,0,37,0</FixtureVal>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="1">
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -23337,7 +23347,7 @@
      <Input Universe="1" Channel="255"/>
     </Tap>
     <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>313</Time>
+    <Time>516</Time>
     <Function FadeIn="0" FadeOut="0" Duration="10">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
     <Function FadeIn="0" FadeOut="0" Duration="10">138</Function>
@@ -23388,33 +23398,35 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="23" CurrentPage="0"/>
-    <Shortcut Page="0" Name="Bitter End"/>
-    <Shortcut Page="1" Name="Today"/>
-    <Shortcut Page="2" Name="Lonely Boy"/>
-    <Shortcut Page="3" Name="Yellow"/>
-    <Shortcut Page="4" Name="Torn"/>
-    <Shortcut Page="5" Name="Valerie"/>
+    <Multipage PagesNum="25" CurrentPage="14"/>
+    <Shortcut Page="0" Name="Page: 1"/>
+    <Shortcut Page="1" Name="Page: 2"/>
+    <Shortcut Page="2" Name="Page: 3"/>
+    <Shortcut Page="3" Name="Page: 4"/>
+    <Shortcut Page="4" Name="Page: 5"/>
+    <Shortcut Page="5" Name="Page: 6"/>
     <Shortcut Page="6" Name="Black Chandelier"/>
-    <Shortcut Page="7" Name="The Middle"/>
-    <Shortcut Page="8" Name="Inside"/>
-    <Shortcut Page="9" Name="Join me in Death"/>
-    <Shortcut Page="10" Name="Boys Cry+Summer"/>
-    <Shortcut Page="11" Name="Space Lord"/>
-    <Shortcut Page="12" Name="Word Up"/>
-    <Shortcut Page="13" Name="Mr. Brightside"/>
-    <Shortcut Page="14" Name="All the small things"/>
-    <Shortcut Page="15" Name="Narcotic"/>
-    <Shortcut Page="16" Name="Teenage Dirtbag"/>
-    <Shortcut Page="17" Name="Down in the past"/>
-    <Shortcut Page="18" Name="Song 2"/>
-    <Shortcut Page="19" Name="Sex on Fire"/>
-    <Shortcut Page="20" Name="Fight for your Right"/>
-    <Shortcut Page="21" Name="Chelsea Dagger"/>
-    <Shortcut Page="22" Name="Killing in the Name of"/>
+    <Shortcut Page="7" Name="Page: 8"/>
+    <Shortcut Page="8" Name="Page: 9"/>
+    <Shortcut Page="9" Name="Page: 10"/>
+    <Shortcut Page="10" Name="Page: 11"/>
+    <Shortcut Page="11" Name="Page: 12"/>
+    <Shortcut Page="12" Name="Page: 13"/>
+    <Shortcut Page="13" Name="Page: 14"/>
+    <Shortcut Page="14" Name="Page: 15"/>
+    <Shortcut Page="15" Name="Page: 16"/>
+    <Shortcut Page="16" Name="Page: 17"/>
+    <Shortcut Page="17" Name="Page: 18"/>
+    <Shortcut Page="18" Name="Page: 19"/>
+    <Shortcut Page="19" Name="Page: 20"/>
+    <Shortcut Page="20" Name="Page: 21"/>
+    <Shortcut Page="21" Name="Page: 22"/>
+    <Shortcut Page="22" Name="Page: 23"/>
+    <Shortcut Page="23" Name="Page: 24"/>
+    <Shortcut Page="24" Name="Page: 25"/>
     <PagesLoop>False</PagesLoop>
     <CueList Caption="Cue-Liste" ID="54" Page="24">
-     <WindowState Visible="False" X="0" Y="40" Width="760" Height="665"/>
+     <WindowState Visible="False" X="0" Y="40" Width="1305" Height="1120"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -24008,7 +24020,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue list" ID="26">
-     <WindowState Visible="True" X="0" Y="50" Width="1315" Height="1145"/>
+     <WindowState Visible="False" X="0" Y="50" Width="1315" Height="1145"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -24310,7 +24322,7 @@
      </Stop>
     </CueList>
     <CueList Caption="Cue-Liste" ID="47" Page="14">
-     <WindowState Visible="False" X="0" Y="45" Width="1310" Height="1150"/>
+     <WindowState Visible="True" X="0" Y="45" Width="1310" Height="1150"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
