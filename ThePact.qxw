@@ -10,7 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Output" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.0.110" Line="1">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputIP="192.168.0.105" outputUni="1"/>
     </Output>
    </Universe>
@@ -18,35 +18,35 @@
     <Input Plugin="MIDI" UID="None" Line="1" Profile="Generic MIDI"/>
    </Universe>
    <Universe Name="MicStand (out)" ID="2">
-    <Output Plugin="ArtNet" UID="192.168.0.110" Line="1"/>
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1"/>
    </Universe>
    <Universe Name="Säule1.1 (out)" ID="3">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="4"/>
     </Output>
    </Universe>
    <Universe Name="Säule1.2 (out)" ID="4">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="5"/>
     </Output>
    </Universe>
    <Universe Name="Säule1.3 (out)" ID="5">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="6"/>
     </Output>
    </Universe>
    <Universe Name="Säule1.4 (out)" ID="6">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="7"/>
     </Output>
    </Universe>
    <Universe Name="Säule1.5 (out)" ID="7">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="8"/>
     </Output>
    </Universe>
    <Universe Name="Säule1.6 (out)" ID="8">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="9"/>
     </Output>
    </Universe>
@@ -59,32 +59,32 @@
     </Output>
    </Universe>
    <Universe Name="Säule 2.1 (out)" ID="11">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="12"/>
     </Output>
    </Universe>
    <Universe Name="Säule 2.2 (out)" ID="12">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="13"/>
     </Output>
    </Universe>
    <Universe Name="Säule 2.3 (out)" ID="13">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="14"/>
     </Output>
    </Universe>
    <Universe Name="Säule 2.4 (out)" ID="14">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="15"/>
     </Output>
    </Universe>
    <Universe Name="Säule 2.5 (out)" ID="15">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="16"/>
     </Output>
    </Universe>
    <Universe Name="Säule 2.6 (out)" ID="16">
-    <Output Plugin="ArtNet" UID="192.168.1.1" Line="2">
+    <Output Plugin="ArtNet" UID="192.168.1.1" Line="1">
      <PluginParameters outputUni="17"/>
     </Output>
    </Universe>
@@ -22426,7 +22426,7 @@
    <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="52" Type="Sequence" Name="TMHs walking" BoundScene="0">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -22447,12 +22447,12 @@
    <FixtureVal ID="2">5,74,8,255,14,25,17,255,23,35,26,255,32,65,35,255</FixtureVal>
   </Function>
   <Function ID="54" Type="Scene" Name="TMHs reset" Path="Heads">
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <FixtureVal ID="28">37,231</FixtureVal>
    <FixtureVal ID="2">37,231</FixtureVal>
   </Function>
   <Function ID="55" Type="RGBMatrix" Name="Backlights blinking" Path="Backlights">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Strobe</Algorithm>
@@ -22506,7 +22506,7 @@
     <StartOffset>38</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -22527,7 +22527,7 @@
    </Axis>
   </Function>
   <Function ID="59" Type="RGBMatrix" Name="Blinking rainbow">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Waves</Algorithm>
@@ -22564,7 +22564,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Asymmetric</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -22629,7 +22629,7 @@
    <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0" Note="ALWAYS WHERE I NEED TO BE">82</Step>
   </Function>
   <Function ID="65" Type="Sequence" Name="TMHs swimming" BoundScene="115">
-   <Speed FadeIn="0" FadeOut="0" Duration="27"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="41"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -23947,7 +23947,7 @@
     <StartOffset>40</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="7040"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10656"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -23983,7 +23983,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -24019,7 +24019,7 @@
     <StartOffset>20</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="7040"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10656"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Lissajous</Algorithm>
@@ -24984,10 +24984,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">3,87,7,255</FixtureVal>
    <FixtureVal ID="1">3,87,7,255</FixtureVal>
-   <FixtureVal ID="4">3,87</FixtureVal>
-   <FixtureVal ID="13"/>
+   <FixtureVal ID="4">0,255,2,255,3,87</FixtureVal>
+   <FixtureVal ID="13">0,255,2,255</FixtureVal>
    <FixtureVal ID="6">3,87</FixtureVal>
-   <FixtureVal ID="7">3,87</FixtureVal>
+   <FixtureVal ID="7">0,255,2,255</FixtureVal>
    <FixtureVal ID="28">3,87,7,255</FixtureVal>
    <FixtureVal ID="2">3,87,7,255</FixtureVal>
   </Function>
@@ -30269,7 +30269,7 @@
    <FixtureVal ID="5">3,117,7,255</FixtureVal>
   </Function>
   <Function ID="263" Type="Chaser" Name="TourSpots blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -30282,7 +30282,7 @@
    <FixtureVal ID="5">7,0</FixtureVal>
   </Function>
   <Function ID="265" Type="Chaser" Name="blinking PARs" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -30981,7 +30981,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -31059,7 +31059,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -31080,7 +31080,7 @@
    </Axis>
   </Function>
   <Function ID="368" Type="Chaser" Name="TMHs blinking" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -31583,7 +31583,7 @@
     <StartOffset>150</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="880"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1332"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -31614,7 +31614,7 @@
    <FixtureVal ID="2">5,54,8,255,14,54,17,250,23,54,26,255,32,54,35,255</FixtureVal>
   </Function>
   <Function ID="442" Type="Chaser" Name="TMHs light blue fade on-off" Path="ZZZ Other">
-   <Speed FadeIn="0" FadeOut="0" Duration="440"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="666"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
@@ -34859,7 +34859,7 @@
      <Input Universe="1" Channel="255"/>
     </Tap>
     <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
-    <Time>440</Time>
+    <Time>666</Time>
     <Function FadeIn="0" FadeOut="0" Duration="10">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="7">139</Function>
     <Function FadeIn="0" FadeOut="0" Duration="10">138</Function>
